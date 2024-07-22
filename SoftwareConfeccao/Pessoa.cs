@@ -1,10 +1,11 @@
+namespace SoftwareConfeccao;
 public class Pessoa
 {
     string nome;
     string telefone;
 
     string email;
-
+//--------------------------------------------------------------------------------------
 
     public void SetNome(string nome)
     {
@@ -15,7 +16,7 @@ public class Pessoa
     {
         return nome;
     }
-
+//--------------------------------------------------------------------------------------
     public void SetTelefone(string telefone)
     {
         this.telefone = telefone;
@@ -25,7 +26,7 @@ public class Pessoa
     {
         return telefone;
     }
-
+//--------------------------------------------------------------------------------------
     public void SetEmail(string email)
     {
         this.email = email;
