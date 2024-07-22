@@ -1,7 +1,7 @@
 public class Pessoa
 {
     string nome;
-    int telefone;
+    string telefone;
 
     string email;
 
@@ -16,12 +16,12 @@ public class Pessoa
         return nome;
     }
 
-    public void SetTelefone(int telefone)
+    public void SetTelefone(string telefone)
     {
         this.telefone = telefone;
     }    
 
-    public int GetTelefone()
+    public string GetTelefone()
     {
         return telefone;
     }
