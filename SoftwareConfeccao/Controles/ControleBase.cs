@@ -21,6 +21,6 @@ namespace Controles;
 
         public virtual Pessoa Ler(int Id)
         {
-            return Id;
+            return null;
         }
     }
