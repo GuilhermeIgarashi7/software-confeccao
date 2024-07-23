@@ -31,9 +31,9 @@ public class Pedido
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-    public void SetIdPedido(int Id)
+    public void SetIdPedido(int IdP)
     {
-        idpedido = Id;
+        idpedido = IdP;
     }
 
     public int GetIdPedido()

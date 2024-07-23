@@ -10,9 +10,9 @@ public class Fornecedor : Pessoa
         string endereco;
 //--------------------------------------------------------------------------------------
 
-        public void SetIdFornecedor(int id)
+        public void SetIdFornecedor(int IdF)
         {
-            idfornecedor = id;
+            idfornecedor = IdF;
         }
         public int GetIdFornecedor()
 

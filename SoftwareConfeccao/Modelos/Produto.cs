@@ -9,9 +9,9 @@ public class Produto : Item
 //--------------------------------------------------------------------------------------   
 //--------------------------------------------------------------------------------------
 
-        public void SetIdProduto(int id)
+        public void SetIdProduto(int IdPR)
         {
-            idproduto = id;
+            idproduto = IdPR;
         }
         public int Getidproduto()
         {

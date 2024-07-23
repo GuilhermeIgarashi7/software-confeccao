@@ -5,6 +5,7 @@ public class Pessoa
     string telefone;
 
     string email;
+
 //--------------------------------------------------------------------------------------
 
     public void SetNome(string n)
@@ -36,6 +37,9 @@ public class Pessoa
     {
         return email;
     }
+
+
+
 
 }
 

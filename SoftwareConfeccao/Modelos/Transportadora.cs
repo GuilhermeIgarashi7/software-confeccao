@@ -4,9 +4,9 @@ public class Transportadora : Fornecedor
 {
     int idtransportadora;
 
-        public void Setidtransportadora(int id)
+        public void Setidtransportadora(int IdT)
         {
-            idtransportadora = id;
+            idtransportadora = IdT;
         }
         public int GetidTransportadora()
         {

@@ -10,9 +10,9 @@ public class Item
 
 //--------------------------------------------------------------------------------------
 
-        public void SetIdItem(int id)
+        public void SetIdItem(int IdI)
         {
-            iditem = id;
+            iditem = IdI;
         }
         public int GetIditem()
         {

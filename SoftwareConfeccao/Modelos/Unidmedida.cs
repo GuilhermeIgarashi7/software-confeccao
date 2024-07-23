@@ -28,9 +28,9 @@ public class Unidmedida
         return quantidade;
     }
 
-        public void SetIdMedida(int id)
+        public void SetIdMedida(int IdU)
         {
-            idmedida = id;
+            idmedida = IdU;
         }
         public int Getidmedida()
         {

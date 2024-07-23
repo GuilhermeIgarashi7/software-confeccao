@@ -9,9 +9,9 @@ public class Matprima : Item
     int quantidade;
 //--------------------------------------------------------------------------------------
 
-        public void SetIdMatPrima(int id)
+        public void SetIdMatPrima(int IdM)
         {
-            idmatprima = id;
+            idmatprima = IdM;
         }
         public int GetIdMatPrima()
         {

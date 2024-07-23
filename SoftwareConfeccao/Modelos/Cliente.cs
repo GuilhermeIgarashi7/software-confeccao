@@ -4,9 +4,9 @@ namespace Modelos;
     {
         int idcliente;
 
-        public void SetIdCliente(int Id)
+        public void SetIdCliente(int IdC)
         {
-            idcliente = Id;
+            idcliente = IdC;
         }
 
         public int GetIdCliente()
