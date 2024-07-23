@@ -1,25 +1,26 @@
-namespace SoftwareConfeccao;
+namespace Modelos;
 
 public class Produto : Item
 {
-    int codproduto;
+    int idproduto;
 
     string tempproducao;
 
 //--------------------------------------------------------------------------------------   
-    public void SetCodProduto(int codproduto)
-    {
-        this.codproduto = codproduto;
-    }
+//--------------------------------------------------------------------------------------
 
-    public int GetCodProduto()
-    {
-        return codproduto;
-    }
+        public void SetIdProduto(int id)
+        {
+            idproduto = id;
+        }
+        public int Getidproduto()
+        {
+            return idproduto;
+        }
 //--------------------------------------------------------------------------------------   
-    public void SetTempProducao(string tempprocucao)
+    public void SetTempProducao(string t)
     {
-        this.tempproducao = tempprocucao;
+        this.tempproducao = t;
     }
 
     public string GetTempProducao()

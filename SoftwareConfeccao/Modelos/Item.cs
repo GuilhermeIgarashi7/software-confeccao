@@ -1,10 +1,23 @@
-namespace SoftwareConfeccao;
+namespace Modelos;
 
 public class Item
 {
     string nomeitem;
 
     string custoitem;
+
+    int iditem;
+
+//--------------------------------------------------------------------------------------
+
+        public void SetIdItem(int id)
+        {
+            iditem = id;
+        }
+        public int GetIditem()
+        {
+            return iditem;
+        }
 
 //--------------------------------------------------------------------------------------
 
@@ -19,9 +32,9 @@ public class Item
     }
 //--------------------------------------------------------------------------------------
 
-    public void SetCustoItem(string custoitem)
+    public void SetCustoItem(string c)
     {
-        this.custoitem = custoitem;
+        this.custoitem = c;
     }
 
     public string GetNome()

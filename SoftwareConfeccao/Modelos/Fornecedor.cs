@@ -1,26 +1,28 @@
-namespace SoftwareConfeccao;
+namespace Modelos;
 public class Fornecedor : Pessoa
 {
-        int codfornecedor;
+        int idfornecedor;
         string matprima;
+
 
         string areaproducao;
 
         string endereco;
 //--------------------------------------------------------------------------------------
 
-        public void SetCodFornecedor(int codfornecedor)
+        public void SetIdFornecedor(int id)
         {
-            this.codfornecedor = codfornecedor;
+            idfornecedor = id;
         }
-        public int GetCodFornecedor()
+        public int GetIdFornecedor()
+
         {
-            return codfornecedor;
+            return idfornecedor;
         }
 //--------------------------------------------------------------------------------------
-        public void SetMatPrima(string matprima)
+        public void SetMatPrima(string m)
         {
-            this.matprima = matprima;
+            this.matprima = m;
         }
 
         public string GetMatPrima()
@@ -28,9 +30,9 @@ public class Fornecedor : Pessoa
             return matprima;
         }
 //--------------------------------------------------------------------------------------
-        public void SetAreaProducao(string areaproducao)
+        public void SetAreaProducao(string ap)
         {
-            this.areaproducao = areaproducao;
+            this.areaproducao = ap;
         }
 
         public string GetAreaProducao()
@@ -38,9 +40,9 @@ public class Fornecedor : Pessoa
             return areaproducao;
         }
 //--------------------------------------------------------------------------------------
-        public void SetEndereco(string endereco)
+        public void SetEndereco(string en)
         {
-            this.endereco = endereco;
+            this.endereco = en;
         }
 
         public string GetEndereco()

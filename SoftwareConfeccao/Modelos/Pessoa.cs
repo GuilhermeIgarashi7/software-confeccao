@@ -1,4 +1,4 @@
-namespace SoftwareConfeccao;
+namespace Modelos;
 public class Pessoa
 {
     string nome;
@@ -7,9 +7,9 @@ public class Pessoa
     string email;
 //--------------------------------------------------------------------------------------
 
-    public void SetNome(string nome)
+    public void SetNome(string n)
     {
-        this.nome = nome;
+        this.nome = n;
     }
 
     public string GetNome()
@@ -17,9 +17,9 @@ public class Pessoa
         return nome;
     }
 //--------------------------------------------------------------------------------------
-    public void SetTelefone(string telefone)
+    public void SetTelefone(string t)
     {
-        this.telefone = telefone;
+        this.telefone = t;
     }    
 
     public string GetTelefone()
@@ -27,12 +27,12 @@ public class Pessoa
         return telefone;
     }
 //--------------------------------------------------------------------------------------
-    public void SetEmail(string email)
+    public void SetEmail(string e)
     {
-        this.email = email;
+        this.email = e;
     }    
 
-    public string GetTelefone()
+    public string GetEmail()
     {
         return email;
     }

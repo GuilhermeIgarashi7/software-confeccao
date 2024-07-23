@@ -1,11 +1,11 @@
-namespace SoftwareConfeccao;
+namespace Modelos;
 
 public class Pedido
 {
 
     int quantidade;
 
-    int codpedido;
+    int idpedido;
 
     string frete;
 
@@ -31,19 +31,19 @@ public class Pedido
 //---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 
-    public void SetCodPedido(int codpedido)
+    public void SetIdPedido(int Id)
     {
-        this.codpedido = codpedido;
+        idpedido = Id;
     }
 
-    public int GetCodPedido()
+    public int GetIdPedido()
     {
-        return codpedido;
+        return idpedido;
     }
 //--------------------------------------------------------------------------------------
-        public void SetFrete(string frete)
+        public void SetFrete(string f)
         {
-            this.frete = frete;
+            this.frete = f;
         }
 
         public string GetEndereco()
@@ -51,9 +51,9 @@ public class Pedido
             return frete;
         }
 //--------------------------------------------------------------------------------------
-        public void SetPrazo(string prazo)
+        public void SetPrazo(string p)
         {
-            this.prazo = prazo;
+            this.prazo = p;
         }
 
         public string GetPrazo()
@@ -61,9 +61,9 @@ public class Pedido
             return prazo;
         }
 //--------------------------------------------------------------------------------------
-        public void SetPedido(string pedido)
+        public void SetPedido(string ped)
         {
-            this.pedido = pedido;
+            this.pedido = ped;
         }
 
         public string GetPedido()
@@ -71,9 +71,9 @@ public class Pedido
             return pedido;
         }
 //--------------------------------------------------------------------------------------
-        public void SetObservacao(string observacao)
+        public void SetObservacao(string obs)
         {
-            this.observacao = observacao;
+            this.observacao = obs;
         }
 
         public string GetObservacao()

@@ -1,10 +1,12 @@
-namespace SoftwareConfeccao;
+namespace Modelos;
 
 public class Unidmedida
 {
     string nomeunid;
 
     int quantidade;
+
+    int idmedida;
 //--------------------------------------------------------------------------------------
     public void SetNomeunid(string nomeunid)
     {
@@ -25,4 +27,13 @@ public class Unidmedida
     {
         return quantidade;
     }
+
+        public void SetIdMedida(int id)
+        {
+            idmedida = id;
+        }
+        public int Getidmedida()
+        {
+            return idmedida;
+        }
 }

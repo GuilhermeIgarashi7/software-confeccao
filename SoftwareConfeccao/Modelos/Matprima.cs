@@ -1,28 +1,28 @@
-namespace SoftwareConfeccao;
+namespace Modelos;
 
 public class Matprima : Item
 {
-    int codmatprima;
+    int idmatprima;
 
     string nomeunid;
 
     int quantidade;
-//--------------------------------------------------------------------------------------   
-    public void SetCodMatPrima(int codmatprima)
-    {
-        this.codmatprima = codmatprima;
-    }
+//--------------------------------------------------------------------------------------
 
-    public int GetCodMatPrima()
-    {
-        return codmatprima;
-    }
+        public void SetIdMatPrima(int id)
+        {
+            idmatprima = id;
+        }
+        public int GetIdMatPrima()
+        {
+            return idmatprima;
+        }
 //--------------------------------------------------------------------------------------   
 
 //--------------------------------------------------------------------------------------
-    public void SetNomeunid(string nomeunid)
+    public void SetNomeunid(string unid)
     {
-        this.nomeunid = nomeunid;
+        this.nomeunid = unid;
     }
 
     public string GetNomeunid()
@@ -30,9 +30,9 @@ public class Matprima : Item
         return nomeunid;
     }
 //--------------------------------------------------------------------------------------   
-    public void SetQuantidade(int quantidade)
+    public void SetQuantidade(int q)
     {
-        this.quantidade = quantidade;
+        this.quantidade = q;
     }
 
     public int GetQuantidade()
