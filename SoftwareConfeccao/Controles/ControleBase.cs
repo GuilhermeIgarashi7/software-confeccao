@@ -23,4 +23,20 @@ namespace Controles;
         {
             return null;
         }
+
+        public virtual void CriarI(Item i)
+        {
+
+        }
+
+        public virtual void AtualizarI(Item i)
+        {
+
+        }
+
+
+        public virtual Item LerI(int Id)
+        {
+            return null;
+        }
     }
