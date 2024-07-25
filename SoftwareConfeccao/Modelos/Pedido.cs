@@ -1,5 +1,5 @@
 namespace Modelos;
-{
+
     public class Pedido
     {
 
@@ -81,4 +81,3 @@ namespace Modelos;
                 return observacao;
             }
     }
-}

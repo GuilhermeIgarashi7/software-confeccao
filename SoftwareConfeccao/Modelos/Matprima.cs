@@ -1,5 +1,5 @@
 namespace Modelos;
-{
+
     public class Matprima : Odin
     {
         int idmatprima;
@@ -42,4 +42,3 @@ namespace Modelos;
     //--------------------------------------------------------------------------------------   
 
     }
-}

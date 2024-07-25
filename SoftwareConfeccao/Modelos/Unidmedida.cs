@@ -1,5 +1,5 @@
 namespace Modelos;
-{
+
 
     public class Unidmedida
     {
@@ -38,4 +38,3 @@ namespace Modelos;
                 return idmedida;
             }
     }
-}

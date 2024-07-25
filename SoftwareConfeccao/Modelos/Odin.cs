@@ -1,6 +1,6 @@
 namespace Modelos;
-{
-    public class Pessoa
+
+    public class Odin
     {
         string nome;
         string telefone;
@@ -75,7 +75,7 @@ namespace Modelos;
             this.custoitem = c;
         }
 
-        public string GetNome()
+        public string GetNomeI()
         {
             return custoitem;
         }
@@ -85,4 +85,4 @@ namespace Modelos;
 
 
     
-}
+
