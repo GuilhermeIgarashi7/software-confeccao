@@ -1,39 +1,41 @@
 namespace Modelos;
-
-public class Unidmedida
 {
-    string nomeunid;
 
-    int quantidade;
-
-    int idmedida;
-//--------------------------------------------------------------------------------------
-    public void SetNomeunid(string nomeunid)
+    public class Unidmedida
     {
-        this.nomeunid = nomeunid;
-    }
+        string nomeunid;
 
-    public string GetNomeunid()
-    {
-        return nomeunid;
-    }
-//--------------------------------------------------------------------------------------   
-    public void SetQuantidade(int quantidade)
-    {
-        this.quantidade = quantidade;
-    }
+        int quantidade;
 
-    public int GetQuantidade()
-    {
-        return quantidade;
-    }
-
-        public void SetIdMedida(int IdU)
+        int idmedida;
+    //--------------------------------------------------------------------------------------
+        public void SetNomeunid(string nomeunid)
         {
-            idmedida = IdU;
+            this.nomeunid = nomeunid;
         }
-        public int Getidmedida()
+
+        public string GetNomeunid()
         {
-            return idmedida;
+            return nomeunid;
         }
+    //--------------------------------------------------------------------------------------   
+        public void SetQuantidade(int quantidade)
+        {
+            this.quantidade = quantidade;
+        }
+
+        public int GetQuantidade()
+        {
+            return quantidade;
+        }
+
+            public void SetIdMedida(int IdU)
+            {
+                idmedida = IdU;
+            }
+            public int Getidmedida()
+            {
+                return idmedida;
+            }
+    }
 }

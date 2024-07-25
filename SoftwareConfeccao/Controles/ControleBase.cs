@@ -1,15 +1,15 @@
 using Modelos;
 
 namespace Controles;
-
+{
     public class ControleBase
     {
-        public virtual void Criar(Pessoa p)
+        public virtual void Criar(Odin o)
         {
 
         }
 
-        public virtual void Atualizar(Pessoa p)
+        public virtual void Atualizar(Odin o)
         {
 
         }
@@ -19,24 +19,11 @@ namespace Controles;
 
         }
 
-        public virtual Pessoa Ler(int Id)
+        public virtual Odin Ler(int Id)
         {
             return null;
         }
 
-        public virtual void CriarI(Item i)
-        {
 
-        }
-
-        public virtual void AtualizarI(Item i)
-        {
-
-        }
-
-
-        public virtual Item LerI(int Id)
-        {
-            return null;
-        }
     }
+}

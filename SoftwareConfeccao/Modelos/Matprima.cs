@@ -1,44 +1,45 @@
 namespace Modelos;
-
-public class Matprima : Item
 {
-    int idmatprima;
+    public class Matprima : Odin
+    {
+        int idmatprima;
 
-    string nomeunid;
+        string nomeunid;
 
-    int quantidade;
-//--------------------------------------------------------------------------------------
+        int quantidade;
+    //--------------------------------------------------------------------------------------
 
-        public void SetIdMatPrima(int IdM)
+            public void SetIdMatPrima(int IdM)
+            {
+                idmatprima = IdM;
+            }
+            public int GetIdMatPrima()
+            {
+                return idmatprima;
+            }
+    //--------------------------------------------------------------------------------------   
+
+    //--------------------------------------------------------------------------------------
+        public void SetNomeunid(string unid)
         {
-            idmatprima = IdM;
+            this.nomeunid = unid;
         }
-        public int GetIdMatPrima()
+
+        public string GetNomeunid()
         {
-            return idmatprima;
+            return nomeunid;
         }
-//--------------------------------------------------------------------------------------   
+    //--------------------------------------------------------------------------------------   
+        public void SetQuantidade(int q)
+        {
+            this.quantidade = q;
+        }
 
-//--------------------------------------------------------------------------------------
-    public void SetNomeunid(string unid)
-    {
-        this.nomeunid = unid;
-    }
+        public int GetQuantidade()
+        {
+            return quantidade;
+        }
+    //--------------------------------------------------------------------------------------   
 
-    public string GetNomeunid()
-    {
-        return nomeunid;
     }
-//--------------------------------------------------------------------------------------   
-    public void SetQuantidade(int q)
-    {
-        this.quantidade = q;
-    }
-
-    public int GetQuantidade()
-    {
-        return quantidade;
-    }
-//--------------------------------------------------------------------------------------   
-
 }
