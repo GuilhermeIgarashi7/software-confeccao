@@ -1,7 +1,7 @@
 using Modelos;
 
-namespace Controles;
-
+namespace Controles
+{
     public class ControleCliente : ControleBase
     {
         public override void Criar(Odin o)
@@ -24,4 +24,4 @@ namespace Controles;
             return null;
         }
     }
-
+}

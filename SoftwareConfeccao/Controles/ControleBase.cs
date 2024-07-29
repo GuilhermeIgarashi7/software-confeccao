@@ -1,6 +1,8 @@
 using Modelos;
 
-namespace Controles;
+namespace Controles
+
+{
 
     public class ControleBase
     {
@@ -28,3 +30,4 @@ namespace Controles;
 
     }
 
+}

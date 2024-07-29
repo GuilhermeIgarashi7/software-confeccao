@@ -1,4 +1,5 @@
-namespace Modelos;
+namespace Modelos
+{
 
     public class Unidmedida
     {
@@ -38,3 +39,4 @@ namespace Modelos;
             }
     }
 
+}

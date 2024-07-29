@@ -1,4 +1,5 @@
-namespace Modelos;
+namespace Modelos
+{
 
     public class Matprima : Odin
     {
@@ -43,3 +44,4 @@ namespace Modelos;
 
     }
 
+}

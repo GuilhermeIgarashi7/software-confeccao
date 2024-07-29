@@ -1,4 +1,5 @@
-namespace Modelos;
+namespace Modelos
+{
 
     public class Fornecedor : Odin
     {
@@ -55,3 +56,4 @@ namespace Modelos;
     //--------------------------------------------------------------------------------------
     }
 
+}

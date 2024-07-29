@@ -1,5 +1,5 @@
-namespace Modelos;
-
+namespace Modelos
+{
     public class Transportadora : Odin
     {
         int idtransportadora;
@@ -14,3 +14,4 @@ namespace Modelos;
             }
     }
 
+}

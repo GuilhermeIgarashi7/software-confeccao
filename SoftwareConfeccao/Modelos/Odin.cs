@@ -1,5 +1,5 @@
-namespace Modelos;
-
+namespace Modelos
+{
     public class Odin
     {
         string nome;
@@ -82,3 +82,4 @@ namespace Modelos;
     }
 
 
+}

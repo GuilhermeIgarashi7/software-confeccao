@@ -1,6 +1,7 @@
 using Modelos;
 
-namespace Controles;
+namespace Controles
+{
 
     public class ControleTransportadora : ControleBase
     {
@@ -25,3 +26,4 @@ namespace Controles;
         }
     }
 
+}

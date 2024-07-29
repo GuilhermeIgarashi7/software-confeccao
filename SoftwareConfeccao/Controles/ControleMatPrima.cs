@@ -1,6 +1,7 @@
 using Modelos;
 
-namespace Controles;
+namespace Controles
+{
 
     public class ControleMatPrima : ControleBase
     {
@@ -24,4 +25,4 @@ namespace Controles;
             return null;
         }
     }
-
+}

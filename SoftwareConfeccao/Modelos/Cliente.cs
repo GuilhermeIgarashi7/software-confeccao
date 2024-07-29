@@ -1,4 +1,5 @@
-namespace Modelos;
+namespace Modelos
+{
 
     public class Cliente : Odin
         {
@@ -17,3 +18,4 @@ namespace Modelos;
 
 
 
+}
