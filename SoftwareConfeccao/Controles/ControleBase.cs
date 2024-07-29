@@ -1,9 +1,10 @@
 using Modelos;
 
 namespace Controles;
-{
+
     public class ControleBase
     {
+
         public virtual void Criar(Odin o)
         {
 
@@ -26,4 +27,4 @@ namespace Controles;
 
 
     }
-}
+

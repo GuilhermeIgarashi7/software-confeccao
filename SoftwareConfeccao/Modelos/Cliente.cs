@@ -1,5 +1,5 @@
 namespace Modelos;
-{
+
     public class Cliente : Odin
         {
             int idcliente;
@@ -14,6 +14,6 @@ namespace Modelos;
                 return idcliente;
             }
         }
-}
+
 
 

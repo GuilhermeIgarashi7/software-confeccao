@@ -1,5 +1,5 @@
 namespace Modelos;
-{
+
     public class Produto : Odin
     {
         int idproduto;
@@ -31,4 +31,3 @@ namespace Modelos;
 
     }
 
-}

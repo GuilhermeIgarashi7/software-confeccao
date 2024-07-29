@@ -1,5 +1,7 @@
+using Modelos;
+
 namespace Controles;
-{
+
     public class ControleTransportadora : ControleBase
     {
         public override void Criar(Odin o)
@@ -12,15 +14,14 @@ namespace Controles;
 
         }
 
-        public override void Apagar(int Id)
+        public override void Apagar(int id)
         {
             
         }
 
-        public override Odin Ler(int Id)
+        public override Odin Ler(int id)
         {
-            return Id;
+            return null;
         }
     }
 
-}

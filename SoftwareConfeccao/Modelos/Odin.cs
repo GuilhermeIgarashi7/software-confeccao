@@ -1,5 +1,5 @@
 namespace Modelos;
-{
+
     public class Odin
     {
         string nome;
@@ -80,5 +80,5 @@ namespace Modelos;
             return custoitem;
         }
     }
-}
+
 
