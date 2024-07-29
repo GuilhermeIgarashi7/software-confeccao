@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="Telas.CadastroClientes"
+             x:Class="Telas.ClientesAltera"
              Title="Cadastro de Cliente">
     <ContentPage.Content>
         <StackLayout BackgroundColor="LightBlue" Padding="10">
@@ -13,18 +13,18 @@
             </Frame>
             
             <Label Text="Nome" />
-            <Frame CornerRadius="5" BackgroundColor="White" Padding="5">
-                <Entry Placeholder="Insira um nome..." />
+            <Frame CornerRadius="5" BackgroundColor="White" Padding="5" Margin="0,5">
+                <Entry Placeholder="Insira um nome..." Text="Rodinei" />
             </Frame>
 
             <Label Text="Telefone" />
-            <Frame CornerRadius="5" BackgroundColor="White" Padding="5">
-                <Entry Placeholder="Insira um telefone..." />
+            <Frame CornerRadius="5" BackgroundColor="White" Padding="5" Margin="0,5">
+                <Entry Placeholder="Insira um telefone..." TextColor="Red" />
             </Frame>
 
             <Label Text="E-Mail" />
-            <Frame CornerRadius="5" BackgroundColor="White" Padding="5">
-                <Entry Placeholder="Insira um e-mail..." />
+            <Frame CornerRadius="5" BackgroundColor="White" Padding="5" Margin="0,5">
+                <Entry Placeholder="Insira um e-mail..." Text="rodilindo@gmail.com" />
             </Frame>
 
             <Button Text="Salvar" BackgroundColor="LightGray" Margin="0,20,0,0" />
@@ -33,5 +33,3 @@
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
-
-<!--icon.png pode ser trocado por uma imagem-->
