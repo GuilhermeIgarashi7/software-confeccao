@@ -1,5 +1,5 @@
 namespace Modelos;
-
+{
     public class Transportadora : Odin
     {
         int idtransportadora;
@@ -13,3 +13,5 @@ namespace Modelos;
                 return idtransportadora;
             }
     }
+
+}

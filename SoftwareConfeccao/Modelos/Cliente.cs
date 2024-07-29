@@ -1,17 +1,19 @@
 namespace Modelos;
-
-        public class Cliente : Odin
-    {
-        int idcliente;
-
-        public void SetIdCliente(int IdC)
+{
+    public class Cliente : Odin
         {
-            idcliente = IdC;
-        }
+            int idcliente;
 
-        public int GetIdCliente()
-        {
-            return idcliente;
+            public void SetIdCliente(int IdC)
+            {
+                idcliente = IdC;
+            }
+
+            public int GetIdCliente()
+            {
+                return idcliente;
+            }
         }
-    }
+}
+
 

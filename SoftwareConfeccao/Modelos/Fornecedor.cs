@@ -1,5 +1,5 @@
 namespace Modelos;
-
+{
     public class Fornecedor : Odin
     {
             int idfornecedor;
@@ -54,3 +54,5 @@ namespace Modelos;
             }
     //--------------------------------------------------------------------------------------
     }
+
+}

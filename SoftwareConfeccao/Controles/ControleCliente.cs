@@ -1,5 +1,5 @@
 namespace Controles;
-
+{
     public class ControleCliente : ControleBase
     {
         public override void CriarC(Odin o)
@@ -22,3 +22,5 @@ namespace Controles;
             return Id;
         }
     }
+
+}

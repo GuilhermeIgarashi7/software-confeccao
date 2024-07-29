@@ -1,5 +1,5 @@
 namespace Modelos;
-
+{
     public class Odin
     {
         string nome;
@@ -45,7 +45,7 @@ namespace Modelos;
         {
             return email;
         }
-
+                            //AQUI COMEÇAM OS ITENS
     //--------------------------------------------------------------------------------------
 
             public void SetIdItem(int IdI)
@@ -80,9 +80,5 @@ namespace Modelos;
             return custoitem;
         }
     }
-
-
-
-
-    
+}
 

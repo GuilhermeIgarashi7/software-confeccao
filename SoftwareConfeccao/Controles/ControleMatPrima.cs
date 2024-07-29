@@ -1,5 +1,5 @@
 namespace Controles;
-
+{
     public class ControleMatPrima : ControleBase
     {
         public override void Criar(Odin o)
@@ -22,3 +22,4 @@ namespace Controles;
             return Id;
         }
     }
+}
