@@ -71,6 +71,17 @@
                 <Button Text="◀" HorizontalOptions="StartAndExpand" />
                 <Button Text="➕" HorizontalOptions="EndAndExpand" />
             </StackLayout>
+
+            <!--frame dos três pontos-->
+            
+             <Frame CornerRadius="20" BackgroundColor="LightBlue" Padding="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <Button Text="◀" HorizontalOptions="Start" VerticalOptions="Start" WidthRequest="50" HeightRequest="50" />
+                    <Button Text="Atualizar" BackgroundColor="LightGray" Margin="0,10" />
+                    <Button Text="Deletar" BackgroundColor="LightGray" Margin="0,10" />
+                </StackLayout>
+            </Frame>
+
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
