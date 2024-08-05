@@ -14,7 +14,7 @@
             
             <Label Text="Nome" />
             <Frame CornerRadius="5" BackgroundColor="White" Padding="5" Margin="0,5">
-                <Entry Placeholder="Insira um nome..." Text="Rodinei" />
+                <Entry Placeholder="Insira um nome..." Text="Rodrigo" />
             </Frame>
 
             <Label Text="Telefone" />
@@ -24,7 +24,7 @@
 
             <Label Text="E-Mail" />
             <Frame CornerRadius="5" BackgroundColor="White" Padding="5" Margin="0,5">
-                <Entry Placeholder="Insira um e-mail..." Text="rodilindo@gmail.com" />
+                <Entry Placeholder="Insira um e-mail..." Text="rodrigo@gmail.com" />
             </Frame>
 
             <Button Text="Salvar" BackgroundColor="LightGray" Margin="0,20,0,0" />

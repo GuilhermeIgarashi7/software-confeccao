@@ -3,64 +3,73 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SoftwareConfeccao.MainPage"
              Shell.NavBarIsVisible = "False">
-    <ContentPage.Content>
-        <StackLayout BackgroundColor="LightBlue" Padding="10">
-            <Frame CornerRadius="10" BackgroundColor="LightGray" Padding="10" Margin="0,10">
+      <ContentPage.Content>
+        <StackLayout BackgroundColor="#00008b" Padding="10">
+            <Frame CornerRadius="10" BackgroundColor="#6699cc" Padding="10" Margin="0,10">
                 <StackLayout>
-                    <Image Source="icon.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" />
                     <Label Text="Cadastro de Clientes" FontAttributes="Bold" HorizontalOptions="Center" />
+                    <Entry Placeholder="Coloque um dado..." />
+                    <Button Text="➤" HorizontalOptions="End" BackgroundColor="#6699cc"/>
                 </StackLayout>
             </Frame>
             
-            <Label Text="Nome" />
-            <Frame CornerRadius="5" BackgroundColor="White" Padding="5" Margin="0,5">
-                <Entry Placeholder="Insira um nome..." Text="Rodinei" />
-            </Frame>
-
-            <Label Text="Telefone" />
-            <Frame CornerRadius="5" BackgroundColor="White" Padding="5" Margin="0,5">
-                <Entry Placeholder="Insira um telefone..." TextColor="Red" />
-            </Frame>
-
-            <Label Text="E-Mail" />
-            <Frame CornerRadius="5" BackgroundColor="White" Padding="5" Margin="0,5">
-                <Entry Placeholder="Insira um e-mail..." Text="rodilindo@gmail.com" />
-            </Frame>
-
-            <Button Text="Salvar" BackgroundColor="LightGray" Margin="0,20,0,0" />
-
-            <Button Text="◀" HorizontalOptions="Start" VerticalOptions="EndAndExpand" Margin="0,10,0,0" />
-
-            <!-- Início dos Frames-->
-
-            <!-- Frame Cliente Não Encontrado-->
-
-            <Frame CornerRadius="20" BackgroundColor="White" Padding="20" HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
-                <StackLayout HorizontalOptions="CenterAndExpand" VerticalOptions="CenterAndExpand">
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Spacing="10">
+                <Frame BackgroundColor="White" CornerRadius="5" Padding="5">
                     <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                        </Grid.RowDefinitions>
                         <Grid.ColumnDefinitions>
                             <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
-                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
-
-                        <Image Source="warning.png" Grid.Row="0" Grid.Column="0" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center" />
-                        <Label Text="Não foi encontrado nenhum cliente com os dados inseridos. Deseja criar um novo Cadastro?" 
-                               Grid.Row="0" Grid.Column="1" Grid.ColumnSpan="2" 
-                               HorizontalTextAlignment="Center" VerticalTextAlignment="Center" 
-                               Margin="10" />
-
-                        <Button Text="X" BackgroundColor="LightGreen" CornerRadius="20" Grid.Row="2" Grid.Column="0" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center" />
-                        <Button Text="V" BackgroundColor="LightCoral" CornerRadius="20" Grid.Row="2" Grid.Column="2" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center" />
+                        <Label Text="Cliente 1" VerticalOptions="Center" />
+                        <Button Text="..." Grid.Column="1" />
                     </Grid>
-                </StackLayout>
-            </Frame>
+                </Frame>
+                <Frame BackgroundColor="White" CornerRadius="5" Padding="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Cliente 2" VerticalOptions="Center" />
+                        <Button Text="..." Grid.Column="1" />
+                    </Grid>
+                </Frame>
+                <Frame BackgroundColor="White" CornerRadius="5" Padding="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Cliente 3" VerticalOptions="Center" />
+                        <Button Text="..." Grid.Column="1" />
+                    </Grid>
+                </Frame>
+                <Frame BackgroundColor="White" CornerRadius="5" Padding="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Cliente 4" VerticalOptions="Center" />
+                        <Button Text="..." Grid.Column="1" />
+                    </Grid>
+                </Frame>
+                <Frame BackgroundColor="White" CornerRadius="5" Padding="5">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                        </Grid.ColumnDefinitions>
+                        <Label Text="Cliente 5" VerticalOptions="Center" />
+                        <Button Text="..." Grid.Column="1" />
+                    </Grid>
+                </Frame>
+            </StackLayout>
 
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Padding="10">
+                <Button Text="◀" HorizontalOptions="StartAndExpand" />
+                <Button Text="➕" HorizontalOptions="EndAndExpand" />
+            </StackLayout>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
