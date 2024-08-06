@@ -18,12 +18,17 @@
 
             <Label Text="Telefone" TextColor="#a0afb7"/>
             <Frame CornerRadius="5" BackgroundColor="White" Padding="5" Margin="0,5">
-                <Entry Placeholder="Insira um telefone..." TextColor="Red" />
+                <Entry Placeholder="Insira um telefone..." Text="(43) 99999-9999" />
             </Frame>
 
             <Label Text="E-Mail" TextColor="#a0afb7"/>
             <Frame CornerRadius="5" BackgroundColor="White" Padding="5" Margin="0,5">
                 <Entry Placeholder="Insira um e-mail..." Text="rodrigo@gmail.com" />
+            </Frame>
+
+            <Label Text="Código do Cliente" TextColor="#a0afb7"/>
+            <Frame CornerRadius="5" BackgroundColor="White" Padding="5" Margin="0,5">
+                <Label Text="000000000" />
             </Frame>
 
             <Button Text="Salvar" BackgroundColor="#6699cc" Margin="0,20,0,0" />
