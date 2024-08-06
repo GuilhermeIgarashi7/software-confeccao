@@ -6,16 +6,15 @@
              Shell.NavBarIsVisible = "false">
     <ContentPage.Content>
         <StackLayout BackgroundColor="#00008b" Padding="10">
-            <Frame CornerRadius="10" BackgroundColor="LightGray" Padding="10" Margin="0,10">
+            <Frame CornerRadius="10" BackgroundColor="#6699cc" Padding="10" Margin="0,10">
                 <StackLayout>
                     <Label Text="Cadastro de Clientes" FontAttributes="Bold" HorizontalOptions="Center" />
                     <Entry Placeholder="Coloque um dado..." />
-                    <Button Text="➤" HorizontalOptions="End" />
+                    <Button Text="➤" HorizontalOptions="End" BackgroundColor="#4169e1"/>
                 </StackLayout>
             </Frame>
             
             <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Spacing="10">
-                <ScrollView>
                 <Frame BackgroundColor="White" CornerRadius="5" Padding="5">
                     <Grid>
                         <Grid.ColumnDefinitions>
@@ -23,7 +22,7 @@
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
                         <Label Text="Cliente 1" VerticalOptions="Center" />
-                        <Button Text="..." Grid.Column="1" />
+                        <Button Text="..." Grid.Column="1" BackgroundColor="#4169e1"/>
                     </Grid>
                 </Frame>
                 <Frame BackgroundColor="White" CornerRadius="5" Padding="5">
@@ -33,7 +32,7 @@
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
                         <Label Text="Cliente 2" VerticalOptions="Center" />
-                        <Button Text="..." Grid.Column="1" />
+                        <Button Text="..." Grid.Column="1" BackgroundColor="#4169e1"/>
                     </Grid>
                 </Frame>
                 <Frame BackgroundColor="White" CornerRadius="5" Padding="5">
@@ -43,7 +42,7 @@
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
                         <Label Text="Cliente 3" VerticalOptions="Center" />
-                        <Button Text="..." Grid.Column="1" />
+                        <Button Text="..." Grid.Column="1" BackgroundColor="#4169e1"/>
                     </Grid>
                 </Frame>
                 <Frame BackgroundColor="White" CornerRadius="5" Padding="5">
@@ -53,7 +52,7 @@
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
                         <Label Text="Cliente 4" VerticalOptions="Center" />
-                        <Button Text="..." Grid.Column="1" />
+                        <Button Text="..." Grid.Column="1" BackgroundColor="#4169e1"/>
                     </Grid>
                 </Frame>
                 <Frame BackgroundColor="White" CornerRadius="5" Padding="5">
@@ -63,19 +62,15 @@
                             <ColumnDefinition Width="Auto" />
                         </Grid.ColumnDefinitions>
                         <Label Text="Cliente 5" VerticalOptions="Center" />
-                        <Button Text="..." Grid.Column="1" />
+                        <Button Text="..." Grid.Column="1" BackgroundColor="#4169e1"/>
                     </Grid>
                 </Frame>
-                </ScrollView>
             </StackLayout>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Padding="10">
-                <Button Text="◀" HorizontalOptions="StartAndExpand" />
-                <Button Text="➕" HorizontalOptions="EndAndExpand" />
+                <Button Text="◀" HorizontalOptions="StartAndExpand" BackgroundColor="#4169e1"/>
+                <Button Text="➕" HorizontalOptions="EndAndExpand" BackgroundColor="#4169e1"/>
             </StackLayout>
-
-
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
