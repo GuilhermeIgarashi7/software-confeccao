@@ -1,8 +1,8 @@
 namespace Telas
 {
-    public partial class Pedido
+    public partial class PedidoCadastro
     {
-        public Pedido()
+        public PedidoCadastro()
         {
             InitializeComponent();
 
