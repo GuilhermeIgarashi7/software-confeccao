@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="SoftwareConfeccao.MainPage"
-             Shell.NavBarIsVisible = "False">
-      <ContentPage.Content>
+             x:Class="Telas.Pedido"
+             Title="Cadastro de Pedidos"
+             Shell.NavBarIsVisible = "false">
+    <ContentPage.Content>
       <ScrollView>
         <StackLayout BackgroundColor="#00008b" Padding="10">
             <Frame CornerRadius="10" BackgroundColor="#6699cc" Padding="10" Margin="0,10">
@@ -87,5 +88,6 @@
         
         </StackLayout>
     </ScrollView>
+
     </ContentPage.Content>
 </ContentPage>
