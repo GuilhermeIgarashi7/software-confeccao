@@ -2,9 +2,9 @@ using Microsoft.Maui.Controls;
 
 namespace Telas
 {
-    public partial class ClientesAltera
+    public partial class ClientesView
     {
-        public ClientesAltera()
+        public ClientesView()
         {
             InitializeComponent();
         }
