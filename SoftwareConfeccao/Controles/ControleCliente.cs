@@ -1,27 +1,48 @@
+using LiteDBExample.Modelos;
 using Modelos;
 
 namespace Controles
 {
     public class ControleCliente : ControleBase
     {
-        public override void Criar(Odin o)
-        {
+        //----------------------------------------------------------------------------
 
+        public ControleCliente() : base()
+        {
+            NomeDaTabela = "Clientes";
         }
 
-        public override void Atualizar(Odin o)
-        {
+        //----------------------------------------------------------------------------
 
+        public virtual Registro? Ler(int idCliente)
+        {
+            var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
+            return collection.FindOne(d => d.Id == idCliente);
         }
 
-        public override void Apagar(int id)
+        //----------------------------------------------------------------------------
+
+        public virtual List<Cliente>? LerTodos()
         {
-            
+            var tabela = liteDB.GetCollection<Cliente>(NomeDaTabela);
+            return new List<Cliente>(tabela.FindAll().OrderBy(d => d.Sobrenome));
         }
 
-        public override Odin Ler(int id)
+        //----------------------------------------------------------------------------
+
+        public virtual void Apagar(int idCliente)
         {
-            return null;
+            var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
+            collection.Delete(idCliente);
+        }
+
+        //----------------------------------------------------------------------------
+
+        public virtual void CriarOuAtualizar(Cliente cliente)
+        {
+            var collection = liteDB.GetCollection<Cliente>(NomeDaTabela);
+            collection.Upsert(cliente);
         }
     }
+
 }

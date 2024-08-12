@@ -1,28 +1,48 @@
+using LiteDBExample.Modelos;
 using Modelos;
 
 namespace Controles
 {
 
     public class ControleMatPrima : ControleBase
-    {
-        public override void Criar(Odin o)
-        {
+    {        
+        //----------------------------------------------------------------------------
 
+        public ControleMatPrima() : base()
+        {
+            NomeDaTabela = "Matprima";
         }
 
-        public override void Atualizar (Odin o)
-        {
+        //----------------------------------------------------------------------------
 
+        public virtual Registro? Ler(int idMatprima)
+        {
+            var collection = liteDB.GetCollection<Matprima>(NomeDaTabela);
+            return collection.FindOne(d => d.Id == idMatprima);
         }
 
-        public override void Apagar(int id)
+        //----------------------------------------------------------------------------
+
+        public virtual List<Matprima>? LerTodos()
         {
-            
+            var tabela = liteDB.GetCollection<Matprima>(NomeDaTabela);
+            return new List<Matprima>(tabela.FindAll().OrderBy(d => d.Nomematprima));
         }
 
-        public override Odin Ler(int id)
+        //----------------------------------------------------------------------------
+
+        public virtual void Apagar(int idMatprima)
         {
-            return null;
+            var collection = liteDB.GetCollection<Matprima>(NomeDaTabela);
+            collection.Delete(idMatprima);
+        }
+
+        //----------------------------------------------------------------------------
+
+        public virtual void CriarOuAtualizar(Matprima Matprima)
+        {
+            var collection = liteDB.GetCollection<Matprima>(NomeDaTabela);
+            collection.Upsert(Matprima);
         }
     }
 }

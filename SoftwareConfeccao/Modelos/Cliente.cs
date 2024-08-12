@@ -1,20 +1,18 @@
+using LiteDB;
+using LiteDBExample.Modelos;
+
 namespace Modelos
 {
 
-    public class Cliente : Odin
-        {
-            int idcliente;
+  public class Cliente : Pessoa
+  {
+    [BsonId]
+    public int idCliente { get; set; }
+    public string Nome { get; set; }
+    public string Sobrenome { get; set; }
 
-            public void SetIdCliente(int IdC)
-            {
-                idcliente = IdC;
-            }
-
-            public int GetIdCliente()
-            {
-                return idcliente;
-            }
-        }
+    public string Telefone { get; set; }
+  }
 
 
 

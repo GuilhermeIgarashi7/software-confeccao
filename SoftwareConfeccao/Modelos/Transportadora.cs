@@ -1,17 +1,17 @@
+using LiteDB;
+using LiteDBExample.Modelos;
+
 namespace Modelos
 {
-    public class Transportadora : Odin
+    public class Transportadora : Pessoa
     {
-        int idtransportadora;
+        [BsonId]
+        public int Id { get; set; }
+        public string Telefonetransportadora { get; set; }
 
-            public void Setidtransportadora(int IdT)
-            {
-                idtransportadora = IdT;
-            }
-            public int GetidTransportadora()
-            {
-                return idtransportadora;
-            }
+        public string Nometransportadora { get; set; }
+
+
     }
 
 }

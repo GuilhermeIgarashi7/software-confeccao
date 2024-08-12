@@ -1,3 +1,4 @@
+using LiteDBExample.Modelos;
 using Modelos;
 
 namespace Controles
@@ -6,24 +7,43 @@ namespace Controles
 
     public class ControleFornecedor : ControleBase
     {
-        public override void Criar(Odin o)
-        {
+        //----------------------------------------------------------------------------
 
+        public ControleFornecedor() : base()
+        {
+            NomeDaTabela = "Fornecedores";
         }
 
-        public override void Atualizar (Odin o)
-        {
+        //----------------------------------------------------------------------------
 
+        public virtual Registro? Ler(int idFornecedor)
+        {
+            var collection = liteDB.GetCollection<Fornecedor>(NomeDaTabela);
+            return collection.FindOne(d => d.Id == idFornecedor);
         }
 
-        public override void Apagar(int id)
+        //----------------------------------------------------------------------------
+
+        public virtual List<Fornecedor>? LerTodos()
         {
-            
+            var tabela = liteDB.GetCollection<Fornecedor>(NomeDaTabela);
+            return new List<Fornecedor>(tabela.FindAll().OrderBy(d => d.Nomefornecedor));
         }
 
-        public override Odin Ler(int id)
+        //----------------------------------------------------------------------------
+
+        public virtual void Apagar(int idFornecedor)
         {
-            return null;
+            var collection = liteDB.GetCollection<Fornecedor>(NomeDaTabela);
+            collection.Delete(idFornecedor);
+        }
+
+        //----------------------------------------------------------------------------
+
+        public virtual void CriarOuAtualizar(Fornecedor Fornecedor)
+        {
+            var collection = liteDB.GetCollection<Fornecedor>(NomeDaTabela);
+            collection.Upsert(Fornecedor);
         }
     }
 

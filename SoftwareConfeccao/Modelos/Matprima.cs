@@ -1,46 +1,19 @@
+using LiteDB;
+using LiteDBExample.Modelos;
+
 namespace Modelos
 {
 
-    public class Matprima : Odin
+    public class Matprima : Item
     {
-        int idmatprima;
+        [BsonId]
+        public int Id { get; set; }
+        public string Nomeunid { get; set; }
+        public string Quantidade { get; set; }
 
-        string nomeunid;
+        public string Nomematprima { get; set; }
+        //--------------------------------------------------------------------------------------
 
-        int quantidade;
-    //--------------------------------------------------------------------------------------
-
-            public void SetIdMatPrima(int IdM)
-            {
-                idmatprima = IdM;
-            }
-            public int GetIdMatPrima()
-            {
-                return idmatprima;
-            }
-    //--------------------------------------------------------------------------------------   
-
-    //--------------------------------------------------------------------------------------
-        public void SetNomeunid(string unid)
-        {
-            this.nomeunid = unid;
-        }
-
-        public string GetNomeunid()
-        {
-            return nomeunid;
-        }
-    //--------------------------------------------------------------------------------------   
-        public void SetQuantidade(int q)
-        {
-            this.quantidade = q;
-        }
-
-        public int GetQuantidade()
-        {
-            return quantidade;
-        }
-    //--------------------------------------------------------------------------------------   
 
     }
 

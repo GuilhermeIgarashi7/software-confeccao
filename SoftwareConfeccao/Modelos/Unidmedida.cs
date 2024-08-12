@@ -1,42 +1,17 @@
+using LiteDB;
+using LiteDBExample.Modelos;
+
 namespace Modelos
 {
 
-    public class Unidmedida
+    public class Unidmedida : Registro
     {
-        string nomeunid;
+        [BsonId]
+        public int Id { get; set; }
+        public int Quantidade { get; set; }
+        public string NomeUnid { get; set; }
 
-        int quantidade;
 
-        int idmedida;
-    //--------------------------------------------------------------------------------------
-        public void SetNomeunid(string nomeunid)
-        {
-            this.nomeunid = nomeunid;
-        }
-
-        public string GetNomeunid()
-        {
-            return nomeunid;
-        }
-    //--------------------------------------------------------------------------------------   
-        public void SetQuantidade(int quantidade)
-        {
-            this.quantidade = quantidade;
-        }
-
-        public int GetQuantidade()
-        {
-            return quantidade;
-        }
-
-            public void SetIdMedida(int IdU)
-            {
-                idmedida = IdU;
-            }
-            public int Getidmedida()
-            {
-                return idmedida;
-            }
     }
 
 }

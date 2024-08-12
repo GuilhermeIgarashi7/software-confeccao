@@ -1,59 +1,19 @@
+using LiteDB;
+using LiteDBExample.Modelos;
+
 namespace Modelos
 {
 
-    public class Fornecedor : Odin
-    {
-            int idfornecedor;
-            string matprima;
+  public class Fornecedor : Pessoa
+  {
+    [BsonId]
+    public int idFornecedor { get; set; }
+    public string Matprima { get; set; }
+    public string Areaproducao { get; set; }
 
+    public string Endereco { get; set; }
 
-
-
-            string areaproducao;
-
-            string endereco;
-    //--------------------------------------------------------------------------------------
-
-            public void SetIdFornecedor(int IdF)
-            {
-                idfornecedor = IdF;
-            }
-            public int GetIdFornecedor()
-
-            {
-                return idfornecedor;
-            }
-    //--------------------------------------------------------------------------------------
-            public void SetMatPrima(string m)
-            {
-                this.matprima = m;
-            }
-
-            public string GetMatPrima()
-            {
-                return matprima;
-            }
-    //--------------------------------------------------------------------------------------
-            public void SetAreaProducao(string ap)
-            {
-                this.areaproducao = ap;
-            }
-
-            public string GetAreaProducao()
-            {
-                return areaproducao;
-            }
-    //--------------------------------------------------------------------------------------
-            public void SetEndereco(string en)
-            {
-                this.endereco = en;
-            }
-
-            public string GetEndereco()
-            {
-                return endereco;
-            }
-    //--------------------------------------------------------------------------------------
-    }
+    public string Nomefornecedor { get; set; }
+  }
 
 }

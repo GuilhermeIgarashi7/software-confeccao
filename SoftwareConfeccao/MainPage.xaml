@@ -4,80 +4,29 @@
              x:Class="SoftwareConfeccao.MainPage"
              Shell.NavBarIsVisible = "False">
       <ContentPage.Content>
-     <Grid Padding="20" RowSpacing="20" ColumnSpacing="20">
 
-        <!-- Nome da Empresa -->
-        <Frame Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2" Padding="10" CornerRadius="10" BackgroundColor="White" VerticalOptions="Start">
-            <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                <Image Source="gear.png" WidthRequest="50" HeightRequest="50"/>
-                <Label Text="Nome da Empresa" HorizontalOptions="Center" FontAttributes="Bold"/>
+
+        <StackLayout BackgroundColor="LightBlue" Padding="10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+            <!-- Logo e Nome da Empresa -->
+            <Frame CornerRadius="10" BackgroundColor="White" Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+                <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                    <Image Source="icon.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center"/>
+                    <Label Text="Nome da Empresa" FontAttributes="Bold" HorizontalOptions="Center"/>
+                </StackLayout>
+            </Frame>
+
+            <!-- Menu de Botões -->
+            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Spacing="20">
+                <Button Text="Cliente" ImageSource="icon.png" VerticalOptions="Center" Clicked="OnClienteClicked" HorizontalOptions="FillAndExpand" />
+                <Button Text="Fornecedor" ImageSource="icon.png" VerticalOptions="Center" Clicked="OnFornecedorClicked" HorizontalOptions="FillAndExpand" />
+                <Button Text="Transportadora" ImageSource="icon.png" VerticalOptions="Center" Clicked="OnTransportadoraClicked" HorizontalOptions="FillAndExpand" />
+                <Button Text="Matéria prima" ImageSource="icon.png" VerticalOptions="Center" Clicked="OnMateriaPrimaClicked" HorizontalOptions="FillAndExpand" />
+                <Button Text="Produto" ImageSource="icon.png" VerticalOptions="Center" Clicked="OnProdutoClicked" HorizontalOptions="FillAndExpand" />
+                <Button Text="Pedidos" ImageSource="icon.png" VerticalOptions="Center" Clicked="OnPedidosClicked" HorizontalOptions="FillAndExpand" />
+                <Button Text="Estoque" ImageSource="icon.png" VerticalOptions="Center" Clicked="OnEstoqueClicked" HorizontalOptions="FillAndExpand" />
             </StackLayout>
-        </Frame>
+        </StackLayout>
 
-        <!-- Botões com Imagens -->
-        <Grid Grid.Row="1" Grid.Column="0" Grid.RowSpan="3" Grid.ColumnSpan="2" Padding="20" RowSpacing="20" ColumnSpacing="20">
 
-            <Grid.RowDefinitions>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
-            <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="*"/>
-                <ColumnDefinition Width="*"/>
-            </Grid.ColumnDefinitions>
-
-            <Frame Grid.Row="0" Grid.Column="0" CornerRadius="10" BackgroundColor="White">
-                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                    <ImageButton Source="gear.png" WidthRequest="50" HeightRequest="50" Clicked="OnClienteClicked"/>
-                    <Label Text="Cliente" HorizontalOptions="Center"/>
-                </StackLayout>
-            </Frame>
-            
-            <Frame Grid.Row="0" Grid.Column="1" CornerRadius="10" BackgroundColor="White">
-                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                    <ImageButton Source="gear.png" WidthRequest="50" HeightRequest="50" Clicked="OnFornecedorClicked"/>
-                    <Label Text="Fornecedor" HorizontalOptions="Center"/>
-                </StackLayout>
-            </Frame>
-
-            <Frame Grid.Row="1" Grid.Column="0" CornerRadius="10" BackgroundColor="White">
-                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                    <ImageButton Source="gear.png" WidthRequest="50" HeightRequest="50" Clicked="OnTransportadoraClicked"/>
-                    <Label Text="Transportadora" HorizontalOptions="Center"/>
-                </StackLayout>
-            </Frame>
-
-            <Frame Grid.Row="1" Grid.Column="1" CornerRadius="10" BackgroundColor="White">
-                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                    <ImageButton Source="gear.png" WidthRequest="50" HeightRequest="50" Clicked="OnMateriaPrimaClicked"/>
-                    <Label Text="Matéria Prima" HorizontalOptions="Center"/>
-                </StackLayout>
-            </Frame>
-
-            <Frame Grid.Row="2" Grid.Column="0" CornerRadius="10" BackgroundColor="White">
-                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                    <ImageButton Source="gear.png" WidthRequest="50" HeightRequest="50" Clicked="OnProdutoClicked"/>
-                    <Label Text="Produto" HorizontalOptions="Center"/>
-                </StackLayout>
-            </Frame>
-
-            <Frame Grid.Row="2" Grid.Column="1" CornerRadius="10" BackgroundColor="White">
-                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                    <ImageButton Source="gear.png" WidthRequest="50" HeightRequest="50" Clicked="OnPedidosClicked"/>
-                    <Label Text="Pedidos" HorizontalOptions="Center"/>
-                </StackLayout>
-            </Frame>
-
-            <Frame Grid.Row="3" Grid.Column="0" Grid.ColumnSpan="2" CornerRadius="10" BackgroundColor="White">
-                <StackLayout VerticalOptions="Center" HorizontalOptions="Center">
-                    <ImageButton Source="gear.png" WidthRequest="50" HeightRequest="50" Clicked="OnEstoqueClicked"/>
-                    <Label Text="Estoque" HorizontalOptions="Center"/>
-                </StackLayout>
-            </Frame>
-
-        </Grid>
-    </Grid>
     </ContentPage.Content>
 </ContentPage>

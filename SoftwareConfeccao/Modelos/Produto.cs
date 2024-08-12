@@ -1,33 +1,16 @@
+using LiteDB;
+using LiteDBExample.Modelos;
+
 namespace Modelos
 {
-    public class Produto : Odin
+    public class Produto : Item
     {
-        int idproduto;
+        [BsonId]
+        public int Id { get; set; }
+        public string Tempoproducao { get; set; }
 
-        string tempproducao;
+        public string Valor { get; set; }
 
-    //--------------------------------------------------------------------------------------   
-    //--------------------------------------------------------------------------------------
-
-            public void SetIdProduto(int IdPR)
-            {
-                idproduto = IdPR;
-            }
-            public int Getidproduto()
-            {
-                return idproduto;
-            }
-    //--------------------------------------------------------------------------------------   
-        public void SetTempProducao(string t)
-        {
-            this.tempproducao = t;
-        }
-
-        public string GetTempProducao()
-        {
-            return tempproducao;
-        }
-    //--------------------------------------------------------------------------------------   
 
     }
 
