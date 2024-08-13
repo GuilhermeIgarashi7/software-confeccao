@@ -6,9 +6,9 @@
       <ContentPage.Content>
 
 
-        <StackLayout BackgroundColor="LightBlue" Padding="10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
+        <StackLayout BackgroundColor="#00008b" Padding="10" VerticalOptions="FillAndExpand" HorizontalOptions="FillAndExpand">
             <!-- Logo e Nome da Empresa -->
-            <Frame CornerRadius="10" BackgroundColor="White" Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
+            <Frame CornerRadius="10" BackgroundColor="#a0afb7" Padding="10" HorizontalOptions="FillAndExpand" VerticalOptions="Start">
                 <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
                     <Image Source="icon.png" HeightRequest="50" WidthRequest="50" HorizontalOptions="Center" VerticalOptions="Center"/>
                     <Label Text="Nome da Empresa" FontAttributes="Bold" HorizontalOptions="Center"/>
@@ -16,14 +16,15 @@
             </Frame>
 
             <!-- Menu de Botões -->
-            <StackLayout HorizontalOptions="FillAndExpand" VerticalOptions="CenterAndExpand" Spacing="20">
-                <Button Text="Cliente" ImageSource="icon.png" VerticalOptions="Center" Clicked="OnClienteClicked" HorizontalOptions="FillAndExpand" />
-                <Button Text="Fornecedor" ImageSource="icon.png" VerticalOptions="Center" Clicked="OnFornecedorClicked" HorizontalOptions="FillAndExpand" />
-                <Button Text="Transportadora" ImageSource="icon.png" VerticalOptions="Center" Clicked="OnTransportadoraClicked" HorizontalOptions="FillAndExpand" />
-                <Button Text="Matéria prima" ImageSource="icon.png" VerticalOptions="Center" Clicked="OnMateriaPrimaClicked" HorizontalOptions="FillAndExpand" />
-                <Button Text="Produto" ImageSource="icon.png" VerticalOptions="Center" Clicked="OnProdutoClicked" HorizontalOptions="FillAndExpand" />
-                <Button Text="Pedidos" ImageSource="icon.png" VerticalOptions="Center" Clicked="OnPedidosClicked" HorizontalOptions="FillAndExpand" />
-                <Button Text="Estoque" ImageSource="icon.png" VerticalOptions="Center" Clicked="OnEstoqueClicked" HorizontalOptions="FillAndExpand" />
+            <StackLayout HorizontalOptions="StartAndExpand" VerticalOptions="CenterAndExpand" Spacing="20" BackgroundColor="#a0afb7">
+            
+                <Button Text="Cliente" ImageSource="cliente.png" VerticalOptions="Center" Clicked="OnClienteClicked" HorizontalOptions="FillAndExpand" BackgroundColor="#4169e1" HeightRequest="70" WidthRequest="70"/>
+                <Button Text="Fornecedor" ImageSource="entregador.png" VerticalOptions="Center" Clicked="OnFornecedorClicked" HorizontalOptions="FillAndExpand" BackgroundColor="#4169e1" HeightRequest="70" WidthRequest="70"/>
+                <Button Text="Transportadora" ImageSource="transportadora.png" VerticalOptions="Center" Clicked="OnTransportadoraClicked" HorizontalOptions="FillAndExpand" BackgroundColor="#4169e1" HeightRequest="70" WidthRequest="70"/>
+                <Button Text="Matéria prima" ImageSource="linha.png" VerticalOptions="Center" Clicked="OnMateriaPrimaClicked" HorizontalOptions="FillAndExpand" BackgroundColor="#4169e1" HeightRequest="70" WidthRequest="70"/>
+                <Button Text="Produto" ImageSource="camiseta.png" VerticalOptions="Center" Clicked="OnProdutoClicked" HorizontalOptions="FillAndExpand" BackgroundColor="#4169e1" HeightRequest="70" WidthRequest="70"/>
+                <Button Text="Pedidos" ImageSource="pedido.png" VerticalOptions="Center" Clicked="OnPedidosClicked" HorizontalOptions="FillAndExpand" BackgroundColor="#4169e1" HeightRequest="70" WidthRequest="70"/>
+                <Button Text="Estoque" ImageSource="estoque.png" VerticalOptions="Center" Clicked="OnEstoqueClicked" HorizontalOptions="FillAndExpand" BackgroundColor="#4169e1" HeightRequest="70" WidthRequest="70"/>
             </StackLayout>
         </StackLayout>
 

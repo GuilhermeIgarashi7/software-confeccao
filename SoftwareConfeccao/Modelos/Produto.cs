@@ -6,11 +6,12 @@ namespace Modelos
     public class Produto : Item
     {
         [BsonId]
-        public int Id { get; set; }
+        public int idProduto { get; set; }
         public string Tempoproducao { get; set; }
 
         public string Valor { get; set; }
 
+        public string NomeProduto { get; set; }
 
     }
 

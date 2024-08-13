@@ -1,29 +1,50 @@
+using LiteDBExample.Modelos;
 using Modelos;
 
 namespace Controles
 {
 
-    public class ControleTransportadora : ControleBase
-    {
-        public override void Criar(Registro o)
+        public class ControleTransportadora : ControleBase
         {
+        //----------------------------------------------------------------------------
 
+        public ControleTransportadora() : base()
+        {
+            NomeDaTabela = "Transportadoras";
         }
 
-        public override void AtualizarOuCriar(Registro o)
-        {
+        //----------------------------------------------------------------------------
 
+        public virtual Registro? Ler(int idTransportadora)
+        {
+            var collection = liteDB.GetCollection<Transportadora>(NomeDaTabela);
+            return collection.FindOne(d => d.Id == idTransportadora);
         }
 
-        public override void Apagar(int id)
+        //----------------------------------------------------------------------------
+
+        public virtual List<Transportadora>? LerTodos()
         {
-            
+            var tabela = liteDB.GetCollection<Transportadora>(NomeDaTabela);
+            return new List<Transportadora>(tabela.FindAll().OrderBy(d => d.Nometransportadora));
         }
 
-        public override Registro Ler(int id)
-        {
-            return null;
-        }
-    }
+        //----------------------------------------------------------------------------
 
+        public virtual void Apagar(int idTransportadora)
+        {
+            var collection = liteDB.GetCollection<Transportadora>(NomeDaTabela);
+            collection.Delete(idTransportadora);
+        }
+
+        //----------------------------------------------------------------------------
+
+        public virtual void CriarOuAtualizar(Transportadora Transportadora)
+        {
+            var collection = liteDB.GetCollection<Transportadora>(NomeDaTabela);
+            collection.Upsert(Transportadora);
+        }
+
+        //----------------------------------------------------------------------------
+        }
 }

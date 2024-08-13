@@ -5,24 +5,41 @@ namespace Controles
 {
     public class ControleProduto : ControleBase
     {
-        public override void Criar(Registro o)
+        public ControleProduto() : base()
         {
-
+            NomeDaTabela = "Produto";
         }
 
-        public override void AtualizarOuCriar(Registro o)
-        {
+        //----------------------------------------------------------------------------
 
+        public virtual Registro? Ler(int idProduto)
+        {
+            var collection = liteDB.GetCollection<Produto>(NomeDaTabela);
+            return collection.FindOne(d => d.Id == idProduto);
         }
 
-        public override void Apagar(int id)
+        //----------------------------------------------------------------------------
+
+        public virtual List<Produto>? LerTodos()
         {
-            
+            var tabela = liteDB.GetCollection<Produto>(NomeDaTabela);
+            return new List<Produto>(tabela.FindAll().OrderBy(d => d.NomeProduto));
         }
 
-        public override Registro Ler(int id)
+        //----------------------------------------------------------------------------
+
+        public virtual void Apagar(int idProduto)
         {
-            return null;
+            var collection = liteDB.GetCollection<Produto>(NomeDaTabela);
+            collection.Delete(idProduto);
+        }
+
+        //----------------------------------------------------------------------------
+
+        public virtual void CriarOuAtualizar(Produto Produto)
+        {
+            var collection = liteDB.GetCollection<Produto>(NomeDaTabela);
+            collection.Upsert(Produto);
         }
     }
 
