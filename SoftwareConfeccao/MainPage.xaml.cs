@@ -1,4 +1,6 @@
-﻿namespace SoftwareConfeccao;
+﻿using Telas;
+
+namespace SoftwareConfeccao;
 
 public partial class MainPage : ContentPage
 {
@@ -9,8 +11,7 @@ public partial class MainPage : ContentPage
 	}
        private void OnClienteClicked(object sender, EventArgs e)
         {
-            // Código para quando o botão "Cliente" for clicado
-            DisplayAlert("Cliente", "Você clicou em Cliente", "OK");
+            Application.Current.MainPage = new ClientesTela();
         }
 
         private void OnFornecedorClicked(object sender, EventArgs e)

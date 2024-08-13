@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Telas.ClientesTela"
+             Title="Lista de Clientes"
+             Shell.NavBarIsVisible = "false">
+    <ContentPage.Content>
+      <ScrollView>
+        <StackLayout BackgroundColor="#00008b" Padding="10">
+            <Frame CornerRadius="10" BackgroundColor="#6699cc" Padding="10" Margin="0,10">
+                <StackLayout>
+                    <Label Text="Cadastro de Clientes" FontAttributes="Bold" HorizontalOptions="Center" />
+                    <Entry Placeholder="Coloque um dado..." />
+                    <Button Text="➤" HorizontalOptions="End" BackgroundColor="#4169e1"/>
+                </StackLayout>
+            </Frame>
+            
+            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Spacing="10">
+                <ListView x:Name="ListaClientes"
+                          HasUnevenRows="True"
+                          HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand">
+
+                </ListView>
+            </StackLayout>
+
+            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Padding="10">
+                <Button Text="◀" HorizontalOptions="StartAndExpand" VerticalOptions="End" BackgroundColor="#4169e1" Clicked="OnVoltarClienteClicked"/>
+                <Button Text="➕" HorizontalOptions="EndAndExpand" VerticalOptions="End" BackgroundColor="#4169e1" Clicked="OnNovoClienteClicked"/>
+            </StackLayout>
+
+
+
+        <!--!FRAME DOS TRÊS PONTOS-->
+
+        
+        </StackLayout>
+    </ScrollView>
+
+    </ContentPage.Content>
+</ContentPage>
