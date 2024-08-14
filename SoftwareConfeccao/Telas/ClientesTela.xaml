@@ -23,7 +23,7 @@
                     <DataTemplate>
                     <ViewCell>
                         <VerticalStackLayout Padding="20"
-                                            BackgroundColor="Pink">
+                                            BackgroundColor="#4169e1">
                         <HorizontalStackLayout>
                             <Label Text="{Binding Nome}"
                                 FontSize="20"/>
