@@ -24,7 +24,7 @@ namespace Telas
 
       if (cliente != null)
         {
-        IdLabel.Text        = cliente.Id.ToString();
+        IdLabel.Text        = cliente.idCliente.ToString();
         EntryNomeCliente.Text      = cliente.Nome;
         EntryEmailCliente.Text = cliente.Email;
         EntryTelefoneCliente.Text  = cliente.Telefone;
@@ -44,12 +44,15 @@ namespace Telas
         if (await VerificaSeDadosEstaoCorretos())
         {
         var cliente = new Modelos.Cliente();
+        if (!String.IsNullOrEmpty(IdLabel.Text))
         cliente.idCliente        = int.Parse(IdLabel.Text);
+        else
+        cliente.idCliente = 0;
         cliente.Nome      = EntryNomeCliente.Text;
         cliente.Email = EntryTelefoneCliente.Text;
         cliente.Telefone  = EntryEmailCliente.Text;
 
-        clienteControle.CriarOuAtualizar(cliente);
+        controleCliente.CriarOuAtualizar(cliente);
         }
         await DisplayAlert("Salvar", "Dados salvos com sucesso!", "OK");
         }

@@ -15,14 +15,29 @@
                 </StackLayout>
             </Frame>
             
-            <StackLayout Orientation="Vertical" HorizontalOptions="FillAndExpand" Spacing="10">
                 <ListView x:Name="ListaClientes"
-                          HasUnevenRows="True"
-                          HorizontalOptions="FillAndExpand"
-                          VerticalOptions="FillAndExpand">
-
+                        HasUnevenRows="True"
+                        HorizontalOptions="Fill"
+                        VerticalOptions="Fill">
+                <ListView.ItemTemplate>
+                    <DataTemplate>
+                    <ViewCell>
+                        <VerticalStackLayout Padding="20"
+                                            BackgroundColor="Pink">
+                        <HorizontalStackLayout>
+                            <Label Text="{Binding Nome}"
+                                FontSize="20"/>
+                            <Label Text="{Binding Sobrenome}"
+                                FontSize="20"
+                                Margin="10,0,0,0"/>
+                        </HorizontalStackLayout>
+                        <Label Text="{Binding Telefone}"
+                                FontSize="20"/>
+                        </VerticalStackLayout>
+                    </ViewCell>
+                    </DataTemplate>
+                </ListView.ItemTemplate>
                 </ListView>
-            </StackLayout>
 
             <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Padding="10">
                 <Button Text="◀" HorizontalOptions="StartAndExpand" VerticalOptions="End" BackgroundColor="#4169e1" Clicked="OnVoltarClienteClicked"/>
@@ -33,9 +48,9 @@
 
         <!--!FRAME DOS TRÊS PONTOS-->
 
-        
+
         </StackLayout>
     </ScrollView>
-
     </ContentPage.Content>
+    
 </ContentPage>

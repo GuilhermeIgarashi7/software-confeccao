@@ -1,4 +1,5 @@
 using Microsoft.Maui.Controls;
+using Modelos;
 using SoftwareConfeccao;
 
 namespace Telas
@@ -10,12 +11,12 @@ namespace Telas
         {
             InitializeComponent();
 
-        ListaClientes.ItemsSource = clienteControle.LerTodos();
+        ListaClientes.ItemsSource = controleCliente.LerTodos();
         }
 
     void ListClientes(object sender, SelectedItemChangedEventArgs e)
     {
-        var page = new CadastroClientesPage();
+        var page = new CadastroClientes();
         page.cliente = e.SelectedItem as Cliente;
         Application.Current.MainPage = page;
     }

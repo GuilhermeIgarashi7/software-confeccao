@@ -8,7 +8,7 @@ namespace Modelos
   {
     [BsonId]
     public int idCliente { get; set; }
-    public string Nome { get; set; }
+    public string Nomecliente { get; set; }
     public string Email { get; set; }
 
     public string Telefone { get; set; }
