@@ -1,10 +1,8 @@
-using Microsoft.Maui.Controls;
-
 namespace Telas
 {
-    public partial class ClientesView
+    public partial class TransportadoraTela
     {
-        public ClientesView()
+        public TransportadoraTela()
         {
             InitializeComponent();
         }

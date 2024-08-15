@@ -33,6 +33,17 @@ namespace Telas
             Application.Current.MainPage = new CadastroClientes();
         }
 
+//----------------------------------------------------------------------------
+
+    void QuandoSelecionarUmItemNaListaCliente(object sender, SelectedItemChangedEventArgs e) 
+        {
+            var page = new CadastroClientes();
+
+            page.cliente = e.SelectedItem as Cliente;
+
+            Application.Current.MainPage = page;
+        }
+
         // Aqui você pode adicionar manipuladores de eventos para os botões, se necessário.
     }
 }
