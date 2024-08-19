@@ -7,15 +7,15 @@ namespace Modelos
     {
 
         [BsonId]
-        public int Id { get; set; }
-        public int Quantidade { get; set; }
-        public string Frete { get; set; }
+        public int Idpedido { get; set; }
+        public int Quantidadepedido { get; set; }
+        public string Fretepedido { get; set; }
 
-        public string Prazo { get; set; }
+        public string Prazopedido { get; set; }
 
-        public string Item { get; set; }
+        public string Itempedido { get; set; }
 
-        public string Observacao { get; set; }
+        public string Observacaopedido { get; set; }
 
 
     }

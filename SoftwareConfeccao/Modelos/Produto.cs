@@ -7,9 +7,9 @@ namespace Modelos
     {
         [BsonId]
         public int idProduto { get; set; }
-        public string Tempoproducao { get; set; }
+        public string Tempoproducaoproduto { get; set; }
 
-        public string Valor { get; set; }
+        public string Valorproduto { get; set; }
 
         public string NomeProduto { get; set; }
 
