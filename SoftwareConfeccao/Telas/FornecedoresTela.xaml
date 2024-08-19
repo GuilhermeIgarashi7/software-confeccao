@@ -4,47 +4,66 @@
              x:Class="Telas.FornecedoresTela"
              Title="Lista Fornecedores">
     <ContentPage.Content>
-      <ScrollView>
-        <StackLayout BackgroundColor="#00008b" Padding="10">
-            <Frame CornerRadius="10" BackgroundColor="#6699cc" Padding="10" Margin="0,10">
-                <StackLayout>
-                    <Label Text="Cadastro de Fornecedores" FontAttributes="Bold" HorizontalOptions="Center" />
-                    <Entry Placeholder="Coloque um dado..." />
-                    <Button Text="➤" HorizontalOptions="End" BackgroundColor="#4169e1"/>
-                </StackLayout>
-            </Frame>
-            
+        <ScrollView>
+            <StackLayout BackgroundColor="#00008b"
+                    Padding="10">
+                <Frame CornerRadius="10"
+                        BackgroundColor="#6699cc"
+                        Padding="10"
+                        Margin="0,10">
+                    <StackLayout>
+                        <Label Text="Cadastro de Fornecedores"
+                                FontAttributes="Bold"
+                                HorizontalOptions="Center"/>
+                        <Entry Placeholder="Coloque um dado..."/>
+                        <Button Text="➤"
+                                HorizontalOptions="End"
+                                BackgroundColor="#4169e1"/>
+                    </StackLayout>
+                </Frame>
+
                 <ListView x:Name="ListaFornecedores"
-                        ItemSelected="QuandoSelecionarUmItemNaListaFornecedor"
-                        HasUnevenRows="True"
-                        HorizontalOptions="Fill"
-                        VerticalOptions="Fill">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                    <ViewCell>
-                        <VerticalStackLayout Padding="20"
-                                            BackgroundColor="#4169e1">
-                        <HorizontalStackLayout>
-                            <Label Text="{Binding Nome}"
-                                FontSize="20"/>
-                            <Label Text="{Binding Sobrenome}"
-                                FontSize="20"
-                                Margin="10,0,0,0"/>
-                        </HorizontalStackLayout>
-                        <Label Text="{Binding Telefone}"
-                                FontSize="20"/>
-                        </VerticalStackLayout>
-                    </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
+                          ItemSelected="QuandoSelecionarUmItemNaListaFornecedor"
+                          HasUnevenRows="True"
+                          HorizontalOptions="Fill"
+                          VerticalOptions="Fill">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <VerticalStackLayout Padding="20"
+                                                     BackgroundColor="#4169e1">
+                                    <HorizontalStackLayout>
+                                        <Label Text="{Binding Nome}"
+                                               FontSize="20"/>
+                                        <Label Text="{Binding Sobrenome}"
+                                               FontSize="20"
+                                               Margin="10,0,0,0"/>
+                                    </HorizontalStackLayout>
+                                    <Label Text="{Binding Telefone}"
+                                           FontSize="20"/>
+                                </VerticalStackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
                 </ListView>
 
-            <StackLayout Orientation="Horizontal" HorizontalOptions="FillAndExpand" VerticalOptions="EndAndExpand" Padding="10">
-                <Button Text="◀" HorizontalOptions="StartAndExpand" VerticalOptions="End" BackgroundColor="#4169e1" Clicked="OnVoltarFornecedorClicked"/>
-                <Button Text="➕" HorizontalOptions="EndAndExpand" VerticalOptions="End" BackgroundColor="#4169e1" Clicked="OnNovoFornecedorClicked"/>
-            </StackLayout>
+                <StackLayout Orientation="Horizontal"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="EndAndExpand"
+                        Padding="10">
+                    <Button Text="◀"
+                            HorizontalOptions="StartAndExpand"
+                            VerticalOptions="End"
+                            BackgroundColor="#4169e1"
+                            Clicked="OnVoltarFornecedorClicked"/>
+                    <Button Text="➕"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="End"
+                            BackgroundColor="#4169e1"
+                            Clicked="OnNovoFornecedorClicked"/>
+                </StackLayout>
 
-        </StackLayout>
-    </ScrollView>
+            </StackLayout>
+        </ScrollView>
     </ContentPage.Content>
 </ContentPage>

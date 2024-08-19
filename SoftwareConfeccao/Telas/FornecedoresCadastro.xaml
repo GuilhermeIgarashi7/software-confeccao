@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Telas.FornecedoresCadastro"
-             Shell.NavBarIsVisible="False">
+             Title="Cadastro de Fornecedores">
     <ContentPage.Content>
         <ScrollView>
             <StackLayout BackgroundColor="#00008b"

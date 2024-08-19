@@ -7,15 +7,15 @@
     <ContentPage.Content>
         <ScrollView>
             <StackLayout BackgroundColor="#00008b"
-                    Padding="10">
+                         Padding="10">
                 <Frame CornerRadius="10"
-                        BackgroundColor="#6699cc"
-                        Padding="10"
-                        Margin="0,10">
+                       BackgroundColor="#6699cc"
+                       Padding="10"
+                       Margin="0,10">
                     <StackLayout>
                         <Label Text="Cadastro de Clientes"
-                                FontAttributes="Bold"
-                                HorizontalOptions="Center"/>
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"/>
                         <Entry Placeholder="Coloque um dado..."/>
                         <Button Text="➤"
                                 HorizontalOptions="End"
@@ -49,9 +49,9 @@
                 </ListView>
 
                 <StackLayout Orientation="Horizontal"
-                        HorizontalOptions="FillAndExpand"
-                        VerticalOptions="EndAndExpand"
-                        Padding="10">
+                             HorizontalOptions="FillAndExpand"
+                             VerticalOptions="EndAndExpand"
+                             Padding="10">
                     <Button Text="◀"
                             HorizontalOptions="StartAndExpand"
                             VerticalOptions="End"

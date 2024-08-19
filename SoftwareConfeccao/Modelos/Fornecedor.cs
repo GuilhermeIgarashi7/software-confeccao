@@ -8,8 +8,8 @@ namespace Modelos
   {
     [BsonId]
     public int idFornecedor { get; set; }
-    public string Matprima { get; set; }
-    public string AreaproducaoFornecedor { get; set; }
+    public string Matprimafornecedor { get; set; }
+    public string Areaproducaofornecedor { get; set; }
 
     public string Enderecofornecedor { get; set; }
 

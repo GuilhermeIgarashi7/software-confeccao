@@ -1,21 +1,22 @@
 using Modelos;
+using SoftwareConfeccao;
 
 namespace Telas
 {
     public partial class FornecedoresTela
     {
-    Controles.ControleCliente controleCliente = new Controles.ControleFornecedor();
+    Controles.ControleFornecedor controleFornecedor = new Controles.ControleFornecedor();
         public FornecedoresTela()
         {
             InitializeComponent();
 
-        ListaClientes.ItemsSource = controleCliente.LerTodos();
+        ListaFornecedores.ItemsSource = controleFornecedor.LerTodos();
         }
 
     void ListFornecedor(object sender, SelectedItemChangedEventArgs e)
     {
-        var page = new CadastroFornecedor();
-        page.cliente = e.SelectedItem as Cliente;
+        var page = new FornecedoresCadastro();
+        page.fornecedor = e.SelectedItem as Fornecedor;
         Application.Current.MainPage = page;
     }
 
@@ -28,16 +29,16 @@ namespace Telas
 
         private void OnNovoFornecedorClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new CadastroFornecedor();
+            Application.Current.MainPage = new FornecedoresCadastro();
         }
 
 //----------------------------------------------------------------------------
 
     void QuandoSelecionarUmItemNaListaFornecedor(object sender, SelectedItemChangedEventArgs e) 
         {
-            var page = new CadastroFornecedor();
+            var page = new FornecedoresCadastro();
 
-            page.cliente = e.SelectedItem as Fornecedor;
+            page.fornecedor = e.SelectedItem as Fornecedor;
 
             Application.Current.MainPage = page;
         }

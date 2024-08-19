@@ -16,8 +16,8 @@ public partial class MainPage : ContentPage
 
         private void OnFornecedorClicked(object sender, EventArgs e)
         {
-            // Código para quando o botão "Fornecedor" for clicado
-            DisplayAlert("Fornecedor", "Você clicou em Fornecedor", "OK");
+            Application.Current.MainPage = new FornecedoresTela();
+            
         }
 
         private void OnTransportadoraClicked(object sender, EventArgs e)
