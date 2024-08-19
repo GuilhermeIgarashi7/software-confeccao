@@ -47,7 +47,7 @@ namespace Telas
                 if (!String.IsNullOrEmpty(IdLabel.Text))
                     cliente.idCliente = int.Parse(IdLabel.Text);
                 else
-                    cliente.idCliente = 0;
+                cliente.idCliente = 0;
                 cliente.Nome = EntryNomeCliente.Text;
                 cliente.Email = EntryTelefoneCliente.Text;
                 cliente.Telefone = EntryEmailCliente.Text;

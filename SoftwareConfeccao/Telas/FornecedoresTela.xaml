@@ -35,7 +35,7 @@
                                     <HorizontalStackLayout>
                                         <Label Text="{Binding Nome}"
                                                FontSize="20"/>
-                                        <Label Text="{Binding Sobrenome}"
+                                        <Label Text="{Binding Email}"
                                                FontSize="20"
                                                Margin="10,0,0,0"/>
                                     </HorizontalStackLayout>
