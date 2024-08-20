@@ -23,14 +23,13 @@ namespace Telas
 
             if (fornecedor != null)
             {
-                IdLabelFornecedor.Text = fornecedor.idFornecedor.ToString();
-                EntryNomeFornecedor.Text = fornecedor.Nomefornecedor;
-                EntryEmailFornecedor.Text = fornecedor.Emailfornecedor;
-                EntryTelefoneFornecedor.Text = fornecedor.Telefonefornecedor;
+                IdLabelFornecedor.Text = fornecedor.Id.ToString();
+                EntryNomeFornecedor.Text = fornecedor.Nome;
+                EntryEmailFornecedor.Text = fornecedor.Email;
+                EntryTelefoneFornecedor.Text = fornecedor.Telefone;
                 EntryEnderecoFornecedor.Text = fornecedor.Enderecofornecedor;
                 EntryMatPrimaFornecedor.Text = fornecedor.Matprimafornecedor;
                 EntryAreaProducaoFornecedor.Text = fornecedor.Areaproducaofornecedor;
-
             }
         }
 
@@ -53,9 +52,9 @@ namespace Telas
             {
                 var fornecedor = new Modelos.Fornecedor();
                 if (!String.IsNullOrEmpty(IdLabelFornecedor.Text))
-                    fornecedor.idFornecedor = int.Parse(IdLabelFornecedor.Text);
+                    fornecedor.Id = int.Parse(IdLabelFornecedor.Text);
                 else
-                    fornecedor.idFornecedor = 0;
+                    fornecedor.Id = 0;
                 fornecedor.Nome = EntryNomeFornecedor.Text;
                 fornecedor.Email = EntryTelefoneFornecedor.Text;
                 fornecedor.Telefone = EntryEmailFornecedor.Text;

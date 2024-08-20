@@ -24,7 +24,7 @@ namespace Telas
 
             if (cliente != null)
             {
-                IdLabel.Text = cliente.idCliente.ToString();
+                IdLabel.Text = cliente.Id.ToString();
                 EntryNomeCliente.Text = cliente.Nome;
                 EntryEmailCliente.Text = cliente.Email;
                 EntryTelefoneCliente.Text = cliente.Telefone;
@@ -45,9 +45,9 @@ namespace Telas
             {
                 var cliente = new Modelos.Cliente();
                 if (!String.IsNullOrEmpty(IdLabel.Text))
-                    cliente.idCliente = int.Parse(IdLabel.Text);
+                    cliente.Id = int.Parse(IdLabel.Text);
                 else
-                cliente.idCliente = 0;
+                cliente.Id = 0;
                 cliente.Nome = EntryNomeCliente.Text;
                 cliente.Email = EntryTelefoneCliente.Text;
                 cliente.Telefone = EntryEmailCliente.Text;

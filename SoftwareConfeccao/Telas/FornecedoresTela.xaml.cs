@@ -20,7 +20,6 @@ namespace Telas
         Application.Current.MainPage = page;
     }
 
-
 //----------------------------------------------------------------------------
         private void OnVoltarFornecedorClicked(object sender, EventArgs e)
         {

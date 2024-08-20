@@ -27,7 +27,7 @@ namespace Controles
         public virtual List<Fornecedor>? LerTodos()
         {
             var tabela = liteDB.GetCollection<Fornecedor>(NomeDaTabela);
-            return new List<Fornecedor>(tabela.FindAll().OrderBy(d => d.Nomefornecedor));
+            return new List<Fornecedor>(tabela.FindAll().OrderBy(d => d.Nome));
         }
 
         //----------------------------------------------------------------------------
