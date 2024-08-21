@@ -17,32 +17,32 @@ namespace Controles
 
         public virtual Item? Ler(int Id)
         {
-            var collection = liteDB.GetCollection<Produto>(NomeDaTabela);
+            var collection = liteDB.GetCollection<Pedido>(NomeDaTabela);
             return collection.FindOne(d => d.Id == Id);
         }
 
         //----------------------------------------------------------------------------
 
-        public virtual List<Produto>? LerTodos()
+        public virtual List<Pedido>? LerTodos()
         {
-            var tabela = liteDB.GetCollection<Produto>(NomeDaTabela);
-            return new List<Produto>(tabela.FindAll().OrderBy(d => d.NomeProduto));
+            var tabela = liteDB.GetCollection<Pedido>(NomeDaTabela);
+            return new List<Pedido>(tabela.FindAll().OrderBy(d => d.Nomeitem));
         }
 
         //----------------------------------------------------------------------------
 
         public virtual void Apagar(int Id)
         {
-            var collection = liteDB.GetCollection<Produto>(NomeDaTabela);
+            var collection = liteDB.GetCollection<Pedido>(NomeDaTabela);
             collection.Delete(Id);
         }
 
         //----------------------------------------------------------------------------
 
-        public virtual void CriarOuAtualizar(Produto Produto)
+        public virtual void CriarOuAtualizar(Pedido Pedido)
         {
-            var collection = liteDB.GetCollection<Produto>(NomeDaTabela);
-            collection.Upsert(Produto);
+            var collection = liteDB.GetCollection<Pedido>(NomeDaTabela);
+            collection.Upsert(Pedido);
         }
     }
 }

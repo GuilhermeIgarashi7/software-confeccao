@@ -42,7 +42,7 @@ public partial class MainPage : ContentPage
         private void OnPedidosClicked(object sender, EventArgs e)
         {
             // Código para quando o botão "Pedidos" for clicado
-            DisplayAlert("Pedidos", "Você clicou em Pedidos", "OK");
+            Application.Current.MainPage = new PedidoTela();
         }
 
         private void OnEstoqueClicked(object sender, EventArgs e)

@@ -8,7 +8,8 @@ namespace Modelos
 
         [BsonId]
         public int Id { get; set; }
-        public int Quantidadepedido { get; set; }
+        public string Custoitem { get; set; }
+        public string Quantidadepedido { get; set; }
         public string Fretepedido { get; set; }
 
         public string Prazopedido { get; set; }
