@@ -30,7 +30,7 @@ public partial class MainPage : ContentPage
         private void OnMateriaPrimaClicked(object sender, EventArgs e)
         {
             // Código para quando o botão "Matéria Prima" for clicado
-            DisplayAlert("Matéria Prima", "Você clicou em Matéria Prima", "OK");
+            Application.Current.MainPage = new MatPrimaTela();
         }
 
         private void OnProdutoClicked(object sender, EventArgs e)

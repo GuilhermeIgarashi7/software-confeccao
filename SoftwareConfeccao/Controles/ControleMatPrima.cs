@@ -17,31 +17,31 @@ namespace Controles
 
         public virtual Registro? Ler(int idMatprima)
         {
-            var collection = liteDB.GetCollection<Matprima>(NomeDaTabela);
+            var collection = liteDB.GetCollection<MatPrima>(NomeDaTabela);
             return collection.FindOne(d => d.Id == idMatprima);
         }
 
         //----------------------------------------------------------------------------
 
-        public virtual List<Matprima>? LerTodos()
+        public virtual List<MatPrima>? LerTodos()
         {
-            var tabela = liteDB.GetCollection<Matprima>(NomeDaTabela);
-            return new List<Matprima>(tabela.FindAll().OrderBy(d => d.Nomematprima));
+            var tabela = liteDB.GetCollection<MatPrima>(NomeDaTabela);
+            return new List<MatPrima>(tabela.FindAll().OrderBy(d => d.Nomeitem));
         }
 
         //----------------------------------------------------------------------------
 
         public virtual void Apagar(int idMatprima)
         {
-            var collection = liteDB.GetCollection<Matprima>(NomeDaTabela);
+            var collection = liteDB.GetCollection<MatPrima>(NomeDaTabela);
             collection.Delete(idMatprima);
         }
 
         //----------------------------------------------------------------------------
 
-        public virtual void CriarOuAtualizar(Matprima Matprima)
+        public virtual void CriarOuAtualizar(MatPrima Matprima)
         {
-            var collection = liteDB.GetCollection<Matprima>(NomeDaTabela);
+            var collection = liteDB.GetCollection<MatPrima>(NomeDaTabela);
             collection.Upsert(Matprima);
         }
     }

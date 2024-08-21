@@ -4,14 +4,17 @@ using LiteDBExample.Modelos;
 namespace Modelos
 {
 
-    public class Matprima : Item
+    public class MatPrima : Item
     {
         [BsonId]
         public int Id { get; set; }
-        public string Nomeunid { get; set; }
+        public string Nomeitem { get; set; }
+
+        public string Custoitem { get; set; }
+
         public string Quantidade { get; set; }
 
-        public string Nomematprima { get; set; }
+
         //--------------------------------------------------------------------------------------
 
 
