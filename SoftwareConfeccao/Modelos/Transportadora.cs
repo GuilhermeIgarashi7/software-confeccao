@@ -6,10 +6,12 @@ namespace Modelos
     public class Transportadora : Pessoa
     {
         [BsonId]
-        public int idTransportadora { get; set; }
-        public string Telefonetransportadora { get; set; }
+        public int Id { get; set; }
+        public string Telefone { get; set; }
 
-        public string Nometransportadora { get; set; }
+        public string Email { get; set; }
+
+        public string Nome { get; set; }
 
 
     }

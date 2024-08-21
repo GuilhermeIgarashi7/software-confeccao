@@ -23,7 +23,7 @@ public partial class MainPage : ContentPage
         private void OnTransportadoraClicked(object sender, EventArgs e)
         {
             // Código para quando o botão "Transportadora" for clicado
-            DisplayAlert("Transportadora", "Você clicou em Transportadora", "OK");
+
         }
 
         private void OnMateriaPrimaClicked(object sender, EventArgs e)
