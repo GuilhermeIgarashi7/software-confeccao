@@ -42,16 +42,16 @@ namespace Telas
         {
             if (await VerificaSeDadosEstaoCorretos())
             {
-                var cliente = new Modelos.Transportadora();
+                var transportadora = new Modelos.Transportadora();
                 if (!String.IsNullOrEmpty(IdLabelTransportadora.Text))
-                    cliente.Id = int.Parse(IdLabelTransportadora.Text);
+                    transportadora.Id = int.Parse(IdLabelTransportadora.Text);
                 else
-                cliente.Id = 0;
-                cliente.Nome = EntryNomeTransportadora.Text;
-                cliente.Email = EntryTelefoneTransportadora.Text;
-                cliente.Telefone = EntryEmailTransportadora.Text;
+                transportadora.Id = 0;
+                transportadora.Nome = EntryNomeTransportadora.Text;
+                transportadora.Email = EntryTelefoneTransportadora.Text;
+                transportadora.Telefone = EntryEmailTransportadora.Text;
 
-                controleTransportadora.CriarOuAtualizar(cliente);
+                controleTransportadora.CriarOuAtualizar(transportadora);
             }
             await DisplayAlert("Salvar", "Dados salvos com sucesso!", "OK");
         }

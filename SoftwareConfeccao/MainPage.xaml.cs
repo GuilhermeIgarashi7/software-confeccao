@@ -23,6 +23,7 @@ public partial class MainPage : ContentPage
         private void OnTransportadoraClicked(object sender, EventArgs e)
         {
             // Código para quando o botão "Transportadora" for clicado
+            Application.Current.MainPage = new TransportadoraTela();
 
         }
 

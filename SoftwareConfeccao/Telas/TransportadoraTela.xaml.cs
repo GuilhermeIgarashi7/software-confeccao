@@ -14,7 +14,7 @@ namespace Telas
         ListaTransportadora.ItemsSource = controleTransportadora.LerTodos();
         }
 
-    void ListClientes(object sender, SelectedItemChangedEventArgs e)
+    void ListTransportadora(object sender, SelectedItemChangedEventArgs e)
     {
         var page = new TransportadoraCadastro();
         page.transportadora = e.SelectedItem as Transportadora;
@@ -30,7 +30,7 @@ namespace Telas
 
         private void OnNovaTransportadoraClicked(object sender, EventArgs e)
         {
-            Application.Current.MainPage = new CadastroClientes();
+            Application.Current.MainPage = new TransportadoraCadastro();
         }
 
 //----------------------------------------------------------------------------
