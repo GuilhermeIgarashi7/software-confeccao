@@ -23,7 +23,7 @@ namespace Controles
         public virtual List<Produto>? LerTodos()
         {
             var tabela = liteDB.GetCollection<Produto>(NomeDaTabela);
-            return new List<Produto>(tabela.FindAll().OrderBy(d => d.NomeProduto));
+            return new List<Produto>(tabela.FindAll().OrderBy(d => d.Nomeitem));
         }
 
         //----------------------------------------------------------------------------

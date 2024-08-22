@@ -36,7 +36,7 @@ public partial class MainPage : ContentPage
         private void OnProdutoClicked(object sender, EventArgs e)
         {
             // Código para quando o botão "Produto" for clicado
-            DisplayAlert("Produto", "Você clicou em Produto", "OK");
+            Application.Current.MainPage = new ProdutoTela();
         }
 
         private void OnPedidosClicked(object sender, EventArgs e)

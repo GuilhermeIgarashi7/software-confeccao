@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Telas.ProdutoTela"
+             Title="Lista Matéria Prima">
+    <ContentPage.Content>
+        <ScrollView>
+            <StackLayout BackgroundColor="#00008b"
+                    Padding="10">
+                <Frame CornerRadius="10"
+                        BackgroundColor="#6699cc"
+                        Padding="10"
+                        Margin="0,10">
+                    <StackLayout>
+                        <Label Text="Cadastro de Matéria Prima"
+                                FontAttributes="Bold"
+                                HorizontalOptions="Center"/>
+                        <Entry Placeholder="Coloque um dado..."/>
+                        <Button Text="➤"
+                                HorizontalOptions="End"
+                                BackgroundColor="#4169e1"/>
+                    </StackLayout>
+                </Frame>
+
+                <ListView x:Name="ListaProduto"
+                          ItemSelected="QuandoSelecionarUmItemNaListaProduto"
+                          HasUnevenRows="True"
+                          HorizontalOptions="Fill"
+                          VerticalOptions="Fill">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <VerticalStackLayout Padding="20"
+                                                     BackgroundColor="#4169e1">
+                                    <HorizontalStackLayout>
+                                        <Label Text="{Binding Nomeitem}"
+                                               FontSize="20"/>
+                                        <Label Text="{Binding Custoitem}"
+                                               FontSize="20"
+                                               Margin="10,0,0,0"/>
+                                    </HorizontalStackLayout>
+                                    <Label Text="{Binding Quantidade}"
+                                           FontSize="20"/>
+                                </VerticalStackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+
+                <StackLayout Orientation="Horizontal"
+                        HorizontalOptions="FillAndExpand"
+                        VerticalOptions="EndAndExpand"
+                        Padding="10">
+                    <Button Text="◀"
+                            HorizontalOptions="StartAndExpand"
+                            VerticalOptions="End"
+                            BackgroundColor="#4169e1"
+                            Clicked="OnVoltarProdutoClicked"/>
+                    <Button Text="➕"
+                            HorizontalOptions="EndAndExpand"
+                            VerticalOptions="End"
+                            BackgroundColor="#4169e1"
+                            Clicked="OnNovoProdutoClicked"/>
+                </StackLayout>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>
