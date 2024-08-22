@@ -57,6 +57,11 @@
                         TextColor="Black"
                         Clicked="OnSalvarDadosProdutoClicked"/>
 
+                <Button Text="Excluir"
+                        TextColor="Red"
+                        BackgroundColor="Transparent"
+                        Clicked="OnApagarProdutoClicked"/>
+
                 <Button Text="◀"
                         HorizontalOptions="Start"
                         VerticalOptions="EndAndExpand"

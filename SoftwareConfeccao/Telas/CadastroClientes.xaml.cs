@@ -79,6 +79,20 @@ namespace Telas
         }
 
 
+        private async void OnApagarClienteClicked(object sender, EventArgs e)  
+        {
+            if (cliente == null || cliente.Id < 1)
+               await DisplayAlert("Erro", "Nenhum cliente para excluir", "ok");
+            else if (await DisplayAlert("Excluir","Tem certeza que deseja excluir esse cliente?","Excluir Cliente","cancelar"))
+            {
+                controleCliente.Apagar(cliente.Id);
+        Application.Current.MainPage = new ClientesTela();                 
+            }
+
+            
+        }
+
+
     }
 
 }

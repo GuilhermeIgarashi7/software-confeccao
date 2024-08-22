@@ -76,8 +76,17 @@ namespace Telas
             else
                 return true;
         }
-
+        private async void OnApagarTransportadoraClicked(object sender, EventArgs e)  
+        {
+            if (transportadora == null || transportadora.Id < 1)
+               await DisplayAlert("Erro", "Nenhuma transportadora para excluir", "ok");
+            else if (await DisplayAlert("Excluir","Tem certeza que deseja excluir essa transportadora?","Excluir Transportadora","cancelar"))
+            {
+                controleTransportadora.Apagar(transportadora.Id);
+        Application.Current.MainPage = new ProdutoTela();                 
+            }
 
     }
 
+ }
 }

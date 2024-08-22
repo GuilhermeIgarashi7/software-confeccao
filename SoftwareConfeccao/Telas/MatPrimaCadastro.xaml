@@ -57,6 +57,12 @@
                         TextColor="Black"
                         Clicked="OnSalvarDadosMatPrimaClicked"/>
 
+                <Button Text="Excluir"
+                        TextColor="Red"
+                        BackgroundColor="Transparent"
+                        Clicked="OnApagarMatPrimaClicked"/>
+
+
                 <Button Text="◀"
                         HorizontalOptions="Start"
                         VerticalOptions="EndAndExpand"

@@ -82,6 +82,11 @@
                         TextColor="Black"
                         Clicked="OnSalvarDadosFornecedorClicked"/>
 
+                <Button Text="Excluir"
+                        TextColor="Red"
+                        BackgroundColor="Transparent"
+                        Clicked="OnApagarFornecedorClicked"/>
+
                 <Button Text="◀"
                         HorizontalOptions="Start"
                         VerticalOptions="EndAndExpand"

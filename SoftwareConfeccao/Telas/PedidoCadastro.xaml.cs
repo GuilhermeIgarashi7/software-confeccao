@@ -98,6 +98,17 @@ namespace Telas
             else
                 return true;
         }
+        private async void OnApagarPedidoClicked(object sender, EventArgs e)  
+        {
+            if (pedido == null || pedido.Id < 1)
+               await DisplayAlert("Erro", "Nenhum Pedido para excluir", "ok");
+            else if (await DisplayAlert("Excluir","Tem certeza que deseja excluir esse pedido?","Excluir Pedido","cancelar"))
+            {
+                controlePedido.Apagar(pedido.Id);
+        Application.Current.MainPage = new PedidoTela();                 
+            }
+
+    }
 
 
     }

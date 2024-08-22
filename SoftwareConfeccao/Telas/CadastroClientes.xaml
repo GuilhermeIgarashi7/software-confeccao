@@ -54,6 +54,12 @@
                     TextColor="Black"
                     Clicked="OnSalvarDadosClienteClicked"/>
 
+                <Button Text="Excluir"
+                        TextColor="Red"
+                        BackgroundColor="Transparent"
+                        Clicked="OnApagarClienteClicked"/>
+
+
             <Button Text="◀"
                     HorizontalOptions="Start"
                     VerticalOptions="EndAndExpand"

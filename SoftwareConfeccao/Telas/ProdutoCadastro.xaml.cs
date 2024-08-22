@@ -81,7 +81,17 @@ namespace Telas
             else
                 return true;
         }
+        private async void OnApagarProdutoClicked(object sender, EventArgs e)  
+        {
+            if (produto == null || produto.Id < 1)
+               await DisplayAlert("Erro", "Nenhum Produto para excluir", "ok");
+            else if (await DisplayAlert("Excluir","Tem certeza que deseja excluir esse produto?","Excluir Produto","cancelar"))
+            {
+                controleProduto.Apagar(produto.Id);
+        Application.Current.MainPage = new ProdutoTela();                 
+            }
 
+    }
 
     }
 

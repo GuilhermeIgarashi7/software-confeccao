@@ -82,6 +82,12 @@
                         TextColor="Black"
                         Clicked="OnSalvarDadosPedidoClicked"/>
 
+                <Button Text="Excluir"
+                        TextColor="Red"
+                        BackgroundColor="Transparent"
+                        Clicked="OnApagarPedidoClicked"/>
+
+
                 <Button Text="◀"
                         HorizontalOptions="Start"
                         VerticalOptions="EndAndExpand"

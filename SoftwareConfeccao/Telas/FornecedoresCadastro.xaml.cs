@@ -104,6 +104,19 @@ namespace Telas
                 return true;
         }
 
+        private async void OnApagarFornecedorClicked(object sender, EventArgs e)  
+        {
+            if (fornecedor == null || fornecedor.Id < 1)
+               await DisplayAlert("Erro", "Nenhum fornecedor para excluir", "ok");
+            else if (await DisplayAlert("Excluir","Tem certeza que deseja excluir esse fornecedor?","Excluir Fornecedor","cancelar"))
+            {
+                controleFornecedor.Apagar(fornecedor.Id);
+        Application.Current.MainPage = new FornecedoresTela();                 
+            }
+
+            
+        }
+
 
     }
 

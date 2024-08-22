@@ -81,8 +81,17 @@ namespace Telas
             else
                 return true;
         }
-
+        private async void OnApagarMatPrimaClicked(object sender, EventArgs e)  
+        {
+            if (matprima == null || matprima.Id < 1)
+               await DisplayAlert("Erro", "Nenhuma Matéria Prima para excluir", "ok");
+            else if (await DisplayAlert("Excluir","Tem certeza que deseja excluir esse fornecedor?","Excluir Fornecedor","cancelar"))
+            {
+                controleMatPrima.Apagar(matprima.Id);
+        Application.Current.MainPage = new MatPrimaTela();                 
+            }
 
     }
 
+ }
 }

@@ -54,6 +54,11 @@
                     TextColor="Black"
                     Clicked="OnSalvarDadosTransportadoraClicked"/>
 
+                <Button Text="Excluir"
+                        TextColor="Red"
+                        BackgroundColor="Transparent"
+                        Clicked="OnApagarTransportadoraClicked"/>
+
             <Button Text="◀"
                     HorizontalOptions="Start"
                     VerticalOptions="EndAndExpand"
