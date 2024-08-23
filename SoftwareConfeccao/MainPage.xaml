@@ -3,46 +3,42 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SoftwareConfeccao.MainPage"
              Shell.NavBarIsVisible="False">
-    <ContentPage.Content>
+        <ContentPage.Content>
 
 
-        <StackLayout BackgroundColor="#00008b"
-                Padding="10"
-                VerticalOptions="FillAndExpand"
-                HorizontalOptions="FillAndExpand">
-            <!-- Logo e Nome da Empresa -->
-            <Frame CornerRadius="10"
-                    BackgroundColor="#a0afb7"
-                    Padding="10"
-                    HorizontalOptions="FillAndExpand"
-                    VerticalOptions="Start">
-                <StackLayout HorizontalOptions="Center"
-                        VerticalOptions="Center">
-                    <Image Source="icon.png"
-                            HeightRequest="50"
-                            WidthRequest="50"
-                            HorizontalOptions="Center"
-                            VerticalOptions="Center"/>
-                    <Label Text="Nome da Empresa"
-                            FontAttributes="Bold"
-                            HorizontalOptions="Center"/>
-                </StackLayout>
-            </Frame>
+                <Grid RowDefinitions="100, *, 50"
+                      ColumnDefinitions="*, 2*, *"
+                      BackgroundColor="White">
 
-            <!-- Menu de Botões -->
-            <StackLayout HorizontalOptions="StartAndExpand"
-                    VerticalOptions="CenterAndExpand"
-                    Spacing="20"
-                    BackgroundColor="#a0afb7">
+                        <!-- Header -->
+                        <BoxView Grid.Row="0"
+                                        Grid.ColumnSpan="3"
+                                        BackgroundColor="Orange"/>
+                        <Label Grid.Row="0"
+                                        Grid.ColumnSpan="3"
+                                        Text="Header"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"/>
 
-                <Button Text="Cliente"
+                        <!-- Navigation -->
+                        <BoxView Grid.Row="1"
+                                        Grid.Column="0"
+                                        BackgroundColor="Lime"/>
+        <VerticalStackLayout Grid.Row="1"
+                              HorizontalOptions="Start"
+                              WidthRequest="80"
+                              Padding="0,0,0,10">
+                              
+               <Button Text="Cliente"
                         ImageSource="cliente.png"
                         VerticalOptions="Center"
                         Clicked="OnClienteClicked"
                         HorizontalOptions="FillAndExpand"
                         BackgroundColor="#4169e1"
                         HeightRequest="70"
-                        WidthRequest="70"/>
+                        WidthRequest="70"
+                        Grid.Row="1"/>
+
                 <Button Text="Fornecedor"
                         ImageSource="entregador.png"
                         VerticalOptions="Center"
@@ -50,7 +46,9 @@
                         HorizontalOptions="FillAndExpand"
                         BackgroundColor="#4169e1"
                         HeightRequest="70"
-                        WidthRequest="70"/>
+                        WidthRequest="70"
+                        Grid.Row="1"/>
+
                 <Button Text="Transportadora"
                         ImageSource="transportadora.png"
                         VerticalOptions="Center"
@@ -58,7 +56,9 @@
                         HorizontalOptions="FillAndExpand"
                         BackgroundColor="#4169e1"
                         HeightRequest="70"
-                        WidthRequest="70"/>
+                        WidthRequest="70"
+                        Grid.Row="1"/>
+
                 <Button Text="Matéria prima"
                         ImageSource="linha.png"
                         VerticalOptions="Center"
@@ -66,7 +66,9 @@
                         HorizontalOptions="FillAndExpand"
                         BackgroundColor="#4169e1"
                         HeightRequest="70"
-                        WidthRequest="70"/>
+                        WidthRequest="70"
+                        Grid.Row="1"/>
+
                 <Button Text="Produto"
                         ImageSource="camiseta.png"
                         VerticalOptions="Center"
@@ -74,7 +76,9 @@
                         HorizontalOptions="FillAndExpand"
                         BackgroundColor="#4169e1"
                         HeightRequest="70"
-                        WidthRequest="70"/>
+                        WidthRequest="70"
+                        Grid.Row="1"/>
+
                 <Button Text="Pedidos"
                         ImageSource="pedido.png"
                         VerticalOptions="Center"
@@ -82,7 +86,9 @@
                         HorizontalOptions="FillAndExpand"
                         BackgroundColor="#4169e1"
                         HeightRequest="70"
-                        WidthRequest="70"/>
+                        WidthRequest="70"
+                        Grid.Row="1"/>
+
                 <Button Text="Estoque"
                         ImageSource="estoque.png"
                         VerticalOptions="Center"
@@ -90,10 +96,41 @@
                         HorizontalOptions="FillAndExpand"
                         BackgroundColor="#4169e1"
                         HeightRequest="70"
-                        WidthRequest="70"/>
-            </StackLayout>
-        </StackLayout>
+                        WidthRequest="70"
+                        Grid.Row="1"/>
+        </VerticalStackLayout>
 
+                        <!-- Main Content -->
+                        <BoxView Grid.Row="1"
+                                        Grid.Column="1"
+                                        BackgroundColor="Khaki"/>
+                        <Label Grid.Row="1"
+                                        Grid.Column="1"
+                                        Text="Main"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"/>
 
-    </ContentPage.Content>
+                        <!-- Aside -->
+                        <BoxView Grid.Row="1"
+                                        Grid.Column="2"
+                                        BackgroundColor="SteelBlue"/>
+                        <Label Grid.Row="1"
+                                        Grid.Column="2"
+                                        Text="Aside"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"/>
+
+                        <!-- Footer -->
+                        <BoxView Grid.Row="2"
+                                        Grid.ColumnSpan="3"
+                                        BackgroundColor="LightPink"/>
+                        <Label Grid.Row="2"
+                                        Grid.ColumnSpan="3"
+                                        Text="Footer"
+                                        HorizontalOptions="Center"
+                                        VerticalOptions="Center"/>
+
+                </Grid>
+
+        </ContentPage.Content>
 </ContentPage>
