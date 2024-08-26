@@ -6,126 +6,99 @@
         <ContentPage.Content>
 
 
-                <Grid RowDefinitions="250, *, 50"
-                      ColumnDefinitions="250, 2*, *"
-                      BackgroundColor="White">
+        <Grid>
+                <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="250"/>
+                        <ColumnDefinition Width="*"/>
+                </Grid.ColumnDefinitions>
 
-                        <!-- Header -->
-                        <BoxView Grid.Row="0"
-                                        Grid.ColumnSpan="3"
-                                        BackgroundColor="Orange"/>
-                        <Label Grid.Row="0"
-                                        Grid.ColumnSpan="3"
-                                        Text="Header"
-                                        HorizontalOptions="Center"
-                                        VerticalOptions="Center"/>
-
-                        <!-- Navigation -->
                 <ScrollView Orientation="Vertical"
                             BackgroundColor="#EAEAEA"
-                            Padding="10"
-                            Grid.RowSpan="4">
+                            Padding="10">
                         <StackLayout>
+                                <Image Source="styleroxo.png"
+                                       HeightRequest="200"/>
                                 <BoxView HeightRequest="1"
                                          BackgroundColor="Purple"
                                          Margin="0,10,0,10"/>
 
-                                <Button Text="CLIENTE"
+                                <Button Text="Clientes"
                                         Clicked="OnClienteClicked"
                                         ImageSource="cliente.png"
                                         HorizontalOptions="Start"
                                         VerticalOptions="Center"
                                         BackgroundColor="Transparent"
                                         TextColor="Black"
-                                        FontAttributes="Bold"/>
+                                        FontAttributes="Bold"
+                                        HeightRequest="60"/>
 
-                                <Button Text="FORNECEDOR"
-                                        Clicked="OnFornecedorClicked"
+                                <Button Text="Fornecedor"
                                         ImageSource="entregador.png"
+                                        Clicked="OnFornecedorClicked"
                                         HorizontalOptions="Start"
                                         VerticalOptions="Center"
                                         BackgroundColor="Transparent"
                                         TextColor="Black"
                                         FontAttributes="Bold"
-                                        HeightRequest="50"
-                                        WidthRequest="100"/>
+                                        HeightRequest="60"/>
 
                                 <Button Text="Transportadora"
-                                        HeightRequest="60"
-                                        Clicked="OnTransportadoraClicked"
                                         ImageSource="transportadora.png"
+                                        Clicked="OnTransportadoraClicked"
                                         HorizontalOptions="Start"
                                         VerticalOptions="Center"
                                         BackgroundColor="Transparent"
                                         TextColor="Black"
-                                        FontAttributes="Bold"/>
-                                <Button Text="MATÉRIA PRIMA"
-                                        HeightRequest="60"
-                                        Clicked="OnMateriaPrimaClicked"
+                                        FontAttributes="Bold"
+                                        HeightRequest="60"/>
+
+                                <Button Text="Matéria Prima"
                                         ImageSource="linha.png"
+                                        Clicked="OnMateriaPrimaClicked"
                                         HorizontalOptions="Start"
                                         VerticalOptions="Center"
                                         BackgroundColor="Transparent"
                                         TextColor="Black"
-                                        FontAttributes="Bold"/>
-                                <Button Text="PRODUTOS"
-                                        Clicked="OnProdutoClicked"
+                                        FontAttributes="Bold"
+                                        HeightRequest="60"/>
+
+                                <Button Text="Estoque"
                                         ImageSource="camiseta.png"
+                                        Clicked="OnProdutoClicked"
                                         HorizontalOptions="Start"
                                         VerticalOptions="Center"
                                         BackgroundColor="Transparent"
                                         TextColor="Black"
-                                        FontAttributes="Bold"/>
-                                <Button Text="PEDIDOS"
-                                        Clicked="OnPedidosClicked"
+                                        FontAttributes="Bold"
+                                        HeightRequest="60"/>
+
+                                <Button Text="Pedidos"
                                         ImageSource="pedido.png"
+                                        Clicked="OnPedidosClicked"
                                         HorizontalOptions="Start"
                                         VerticalOptions="Center"
                                         BackgroundColor="Transparent"
                                         TextColor="Black"
-                                        FontAttributes="Bold"/>
-                                <Button Text="ESTOQUE"
-                                        Clicked="OnEstoqueClicked"
+                                        FontAttributes="Bold"
+                                        HeightRequest="60"/>
+
+                                <Button Text="Estoque"
                                         ImageSource="estoque.png"
+                                        Clicked="OnEstoqueClicked"
                                         HorizontalOptions="Start"
                                         VerticalOptions="Center"
                                         BackgroundColor="Transparent"
                                         TextColor="Black"
-                                        FontAttributes="Bold"/>
- 
+                                        FontAttributes="Bold"
+                                        HeightRequest="60"/>
+
                         </StackLayout>
                 </ScrollView>
-                        <!-- Main Content -->
-                        <BoxView Grid.Row="1"
-                                        Grid.Column="1"
-                                        BackgroundColor="Khaki"/>
-                        <Label Grid.Row="1"
-                                        Grid.Column="1"
-                                        Text="Main"
-                                        HorizontalOptions="Center"
-                                        VerticalOptions="Center"/>
 
-                        <!-- Aside -->
-                        <BoxView Grid.Row="1"
-                                        Grid.Column="2"
-                                        BackgroundColor="SteelBlue"/>
-                        <Label Grid.Row="1"
-                                        Grid.Column="2"
-                                        Text="Aside"
-                                        HorizontalOptions="Center"
-                                        VerticalOptions="Center"/>
 
-                        <!-- Footer -->
-                        <BoxView Grid.Row="2"
-                                        Grid.ColumnSpan="3"
-                                        BackgroundColor="LightPink"/>
-                        <Label Grid.Row="2"
-                                        Grid.ColumnSpan="3"
-                                        Text="Footer"
-                                        HorizontalOptions="Center"
-                                        VerticalOptions="Center"/>
-
-                </Grid>
-
+                <Image Grid.Column="1"
+                       Source="background.png"
+                       Aspect="AspectFill"/>
+        </Grid>
         </ContentPage.Content>
 </ContentPage>
