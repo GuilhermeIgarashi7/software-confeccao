@@ -8,12 +8,13 @@
 
         <Grid>
                 <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="210"/>
+                        <ColumnDefinition Width="200"/>
                         <ColumnDefinition Width="*"/>
                 </Grid.ColumnDefinitions>
 
                 <ScrollView Orientation="Vertical"
-                            BackgroundColor="#a0afb7">
+                            BackgroundColor="#6699cc"
+                            Padding="10">
                         <StackLayout>
 
                                 <Button Text="Clientes"
@@ -24,8 +25,7 @@
                                         BackgroundColor="Transparent"
                                         TextColor="Black"
                                         FontAttributes="Bold"
-                                        HeightRequest="60"
-                                        WidthRequest="210"/>
+                                        HeightRequest="60"/>
 
                                 <Button Text="Fornecedor"
                                         ImageSource="entregador.png"
@@ -35,8 +35,7 @@
                                         BackgroundColor="Transparent"
                                         TextColor="Black"
                                         FontAttributes="Bold"
-                                        HeightRequest="60"
-                                        WidthRequest="210"/>
+                                        HeightRequest="60"/>
 
                                 <Button Text="Transportadora"
                                         ImageSource="transportadora.png"
@@ -46,8 +45,7 @@
                                         BackgroundColor="Transparent"
                                         TextColor="Black"
                                         FontAttributes="Bold"
-                                        HeightRequest="60"
-                                        WidthRequest="210"/>
+                                        HeightRequest="60"/>
 
                                 <Button Text="Matéria Prima"
                                         ImageSource="linha.png"
@@ -57,8 +55,7 @@
                                         BackgroundColor="Transparent"
                                         TextColor="Black"
                                         FontAttributes="Bold"
-                                        HeightRequest="60"
-                                        WidthRequest="210"/>
+                                        HeightRequest="60"/>
 
                                 <Button Text="Estoque"
                                         ImageSource="camiseta.png"
@@ -68,8 +65,7 @@
                                         BackgroundColor="Transparent"
                                         TextColor="Black"
                                         FontAttributes="Bold"
-                                        HeightRequest="60"
-                                        WidthRequest="210"/>
+                                        HeightRequest="60"/>
 
                                 <Button Text="Pedidos"
                                         ImageSource="pedido.png"
@@ -79,8 +75,7 @@
                                         BackgroundColor="Transparent"
                                         TextColor="Black"
                                         FontAttributes="Bold"
-                                        HeightRequest="60"
-                                        WidthRequest="210"/>
+                                        HeightRequest="60"/>
 
                                 
 
@@ -89,7 +84,9 @@
                 </ScrollView>
 
 
-
+                <Image Grid.Column="1"
+                       Source="background.png"
+                       Aspect="AspectFill"/>
         </Grid>
         </ContentPage.Content>
 </ContentPage>
