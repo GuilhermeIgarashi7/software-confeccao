@@ -85,7 +85,7 @@ namespace Telas
         {
             if (matprima == null || matprima.Id < 1)
                await DisplayAlert("Erro", "Nenhuma Matéria Prima para excluir", "ok");
-            else if (await DisplayAlert("Excluir","Tem certeza que deseja excluir esse fornecedor?","Excluir Fornecedor","cancelar"))
+            else if (await DisplayAlert("Excluir","Tem certeza que deseja excluir essa Matéria Prima?","Excluir Matéria Prima","cancelar"))
             {
                 controleMatPrima.Apagar(matprima.Id);
         Application.Current.MainPage = new MatPrimaTela();                 
