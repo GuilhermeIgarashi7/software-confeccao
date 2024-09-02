@@ -57,7 +57,7 @@
                                         FontAttributes="Bold"
                                         HeightRequest="60"/>
 
-                                <Button Text="Estoque"
+                                <Button Text="Produtos"
                                         ImageSource="camiseta.png"
                                         Clicked="OnProdutoClicked"
                                         HorizontalOptions="Start"
