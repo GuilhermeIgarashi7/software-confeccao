@@ -5,20 +5,23 @@
              Title="Lista Matéria Prima">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout BackgroundColor="#00008b"
+            <StackLayout BackgroundColor="#808080"
                     Padding="10">
                 <Frame CornerRadius="10"
-                        BackgroundColor="#6699cc"
+                        BackgroundColor="#a1a1a1"
                         Padding="10"
                         Margin="0,10">
                     <StackLayout>
                         <Label Text="Cadastro de Matéria Prima"
                                 FontAttributes="Bold"
-                                HorizontalOptions="Center"/>
-                        <Entry Placeholder="Coloque um dado..."/>
+                                HorizontalOptions="Center"
+                                TextColor="#c2c2c2"/>
+                        <Entry Placeholder="Coloque um dado..." 
+                               TextColor="#c2c2c2"/>
                         <Button Text="➤"
                                 HorizontalOptions="End"
-                                BackgroundColor="#4169e1"/>
+                                BackgroundColor="#919191"
+                                TextColor="#c2c2c2"/>
                     </StackLayout>
                 </Frame>
 
@@ -31,16 +34,19 @@
                         <DataTemplate>
                             <ViewCell>
                                 <VerticalStackLayout Padding="20"
-                                                     BackgroundColor="#4169e1">
+                                                     BackgroundColor="#919191">
                                     <HorizontalStackLayout>
                                         <Label Text="{Binding Nomeitem}"
-                                               FontSize="20"/>
+                                               FontSize="20"
+                                               TextColor="#c2c2c2"/>
                                         <Label Text="{Binding Custoitem}"
                                                FontSize="20"
-                                               Margin="10,0,0,0"/>
+                                               Margin="10,0,0,0"
+                                               TextColor="#c2c2c2"/>
                                     </HorizontalStackLayout>
                                     <Label Text="{Binding Quantidade}"
-                                           FontSize="20"/>
+                                           FontSize="20"
+                                           TextColor="#c2c2c2"/>
                                 </VerticalStackLayout>
                             </ViewCell>
                         </DataTemplate>
@@ -54,12 +60,14 @@
                     <Button Text="◀"
                             HorizontalOptions="StartAndExpand"
                             VerticalOptions="End"
-                            BackgroundColor="#4169e1"
+                            BackgroundColor="#919191"
+                            TextColor="#c2c2c2"
                             Clicked="OnVoltarMatPrimaClicked"/>
                     <Button Text="➕"
                             HorizontalOptions="EndAndExpand"
                             VerticalOptions="End"
-                            BackgroundColor="#4169e1"
+                            BackgroundColor="#919191"
+                            TextColor="#c2c2c2"
                             Clicked="OnNovoMatPrimaClicked"/>
                 </StackLayout>
 
@@ -67,3 +75,4 @@
         </ScrollView>
     </ContentPage.Content>
 </ContentPage>
+

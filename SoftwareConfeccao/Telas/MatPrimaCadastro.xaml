@@ -5,56 +5,58 @@
              Title="Cadastro de Matéria Prima">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout BackgroundColor="#00008b"
+            <StackLayout BackgroundColor="#808080"
                     Padding="10">
                 <Frame CornerRadius="10"
-                        BackgroundColor="#6699cc"
+                        BackgroundColor="#919191"
                         Padding="10"
                         Margin="0,10"
                         VerticalOptions="FillAndExpand">
                     <StackLayout>
                         <Label Text="Cadastro de Matéria Prima"
                                 FontAttributes="Bold"
-                                HorizontalOptions="Center"/>
+                                HorizontalOptions="Center"
+                                TextColor="#FFFFFF"/>
                     </StackLayout>
                 </Frame>
                 <Label Text="ID:"
-                        TextColor="#cfe7ff"/>
-                <Label x:Name="IdLabelMatPrima"></Label>
+                        TextColor="#FFFFFF"/>
+                <Label x:Name="IdLabelMatPrima" TextColor="#FFFFFF"></Label>
 
                 <Label Text="Nome do Item:"
-                        TextColor="#cfe7ff"/>
+                        TextColor="#FFFFFF"/>
                 <Frame CornerRadius="5"
-                        BackgroundColor="#cfe7ff"
+                        BackgroundColor="#c2c2c2"
                         Padding="5">
                     <Entry Placeholder="Insira um Item..."
-                            x:Name="EntryNomeMatPrima"/>
+                            x:Name="EntryNomeMatPrima"
+                            TextColor="Black"/>
                 </Frame>
 
                 <Label Text="Custo:"
-                        TextColor="#cfe7ff"/>
+                        TextColor="#FFFFFF"/>
                 <Frame CornerRadius="5"
-                        BackgroundColor="#cfe7ff"
+                        BackgroundColor="#c2c2c2"
                         Padding="5">
                     <Entry Placeholder="Insira um Custo..."
-                            x:Name="EntryCustoMatPrima"/>
+                            x:Name="EntryCustoMatPrima"
+                            TextColor="Black"/>
                 </Frame>
 
                 <Label Text="Quantidade"
-                        TextColor="#cfe7ff"/>
+                        TextColor="#FFFFFF"/>
                 <Frame CornerRadius="5"
-                        BackgroundColor="#cfe7ff"
+                        BackgroundColor="#c2c2c2"
                         Padding="5">
                     <Entry Placeholder="Insira uma quantidade..."
-                            x:Name="EntryQuantidadeMatPrima"/>
+                            x:Name="EntryQuantidadeMatPrima"
+                            TextColor="Black"/>
                 </Frame>
 
-
-
                 <Button Text="Salvar"
-                        BackgroundColor="#6699cc"
+                        BackgroundColor="#919191"
                         Margin="0,20,0,0"
-                        TextColor="Black"
+                        TextColor="#FFFFFF"
                         Clicked="OnSalvarDadosMatPrimaClicked"/>
 
                 <Button Text="Excluir"
@@ -62,14 +64,13 @@
                         BackgroundColor="Transparent"
                         Clicked="OnApagarMatPrimaClicked"/>
 
-
                 <Button Text="◀"
                         HorizontalOptions="Start"
                         VerticalOptions="EndAndExpand"
                         Margin="0,10,0,0"
-                        BackgroundColor="#6699cc"
+                        BackgroundColor="#919191"
+                        TextColor="#FFFFFF"
                         Clicked="OnVoltarCadastroMatPrimaClicked"/>
-
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

@@ -5,20 +5,21 @@
              Title="Lista Matéria Prima">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout BackgroundColor="#00008b"
+            <StackLayout BackgroundColor="#808080"
                     Padding="10">
                 <Frame CornerRadius="10"
-                        BackgroundColor="#6699cc"
+                        BackgroundColor="#919191"
                         Padding="10"
                         Margin="0,10">
                     <StackLayout>
                         <Label Text="Cadastro de Produto"
                                 FontAttributes="Bold"
-                                HorizontalOptions="Center"/>
+                                HorizontalOptions="Center"
+                                TextColor="White"/>
                         <Entry Placeholder="Coloque um dado..."/>
                         <Button Text="➤"
                                 HorizontalOptions="End"
-                                BackgroundColor="#4169e1"/>
+                                BackgroundColor="#a1a1a1"/>
                     </StackLayout>
                 </Frame>
 
@@ -31,16 +32,19 @@
                         <DataTemplate>
                             <ViewCell>
                                 <VerticalStackLayout Padding="20"
-                                                     BackgroundColor="#4169e1">
+                                                     BackgroundColor="#b2b2b2">
                                     <HorizontalStackLayout>
                                         <Label Text="{Binding Nomeitem}"
-                                               FontSize="20"/>
+                                               FontSize="20"
+                                               TextColor="White"/>
                                         <Label Text="{Binding Custoitem}"
                                                FontSize="20"
-                                               Margin="10,0,0,0"/>
+                                               Margin="10,0,0,0"
+                                               TextColor="White"/>
                                     </HorizontalStackLayout>
                                     <Label Text="{Binding Quantidade}"
-                                           FontSize="20"/>
+                                           FontSize="20"
+                                           TextColor="White"/>
                                 </VerticalStackLayout>
                             </ViewCell>
                         </DataTemplate>
@@ -54,12 +58,12 @@
                     <Button Text="◀"
                             HorizontalOptions="StartAndExpand"
                             VerticalOptions="End"
-                            BackgroundColor="#4169e1"
+                            BackgroundColor="#a1a1a1"
                             Clicked="OnVoltarProdutoClicked"/>
                     <Button Text="➕"
                             HorizontalOptions="EndAndExpand"
                             VerticalOptions="End"
-                            BackgroundColor="#4169e1"
+                            BackgroundColor="#a1a1a1"
                             Clicked="OnNovoProdutoClicked"/>
                 </StackLayout>
 

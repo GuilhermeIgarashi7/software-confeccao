@@ -4,71 +4,73 @@
              x:Class="Telas.CadastroClientes"
              Title="Cadastro de Cliente">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#00008b"
+        <StackLayout BackgroundColor="#808080"
                 Padding="10">
             <Frame CornerRadius="10"
-                    BackgroundColor="#6699cc"
+                    BackgroundColor="#919191"
                     Padding="10"
                     Margin="0,10"
                     VerticalOptions="FillAndExpand">
                 <StackLayout>
                     <Label Text="Cadastro de Clientes"
                             FontAttributes="Bold"
-                            HorizontalOptions="Center"/>
+                            HorizontalOptions="Center"
+                            TextColor="#FFFFFF"/>
                 </StackLayout>
             </Frame>
             <Label Text="ID:"
-                    TextColor="#cfe7ff"/>
-            <Label x:Name="IdLabel"></Label>
+                    TextColor="#FFFFFF"/>
+            <Label x:Name="IdLabel" 
+                   TextColor="#FFFFFF"/>
 
             <Label Text="Nome"
-                    TextColor="#cfe7ff"/>
+                    TextColor="#FFFFFF"/>
             <Frame CornerRadius="5"
-                    BackgroundColor="#cfe7ff"
+                    BackgroundColor="#b2b2b2"
                     Padding="5">
                 <Entry Placeholder="Insira um nome..."
-                        x:Name="EntryNomeCliente"/>
+                        x:Name="EntryNomeCliente"
+                        TextColor="Black"/>
             </Frame>
 
             <Label Text="Telefone"
-                    TextColor="#cfe7ff"/>
+                    TextColor="#FFFFFF"/>
             <Frame CornerRadius="5"
-                    BackgroundColor="#cfe7ff"
+                    BackgroundColor="#b2b2b2"
                     Padding="5">
                 <Entry Placeholder="Insira um telefone..."
-                        x:Name="EntryTelefoneCliente"/>
+                        x:Name="EntryTelefoneCliente"
+                        TextColor="Black"/>
             </Frame>
 
             <Label Text="E-Mail"
-                    TextColor="#cfe7ff"/>
+                    TextColor="#FFFFFF"/>
             <Frame CornerRadius="5"
-                    BackgroundColor="#cfe7ff"
+                    BackgroundColor="#b2b2b2"
                     Padding="5">
                 <Entry Placeholder="Insira um e-mail..."
-                        x:Name="EntryEmailCliente"/>
+                        x:Name="EntryEmailCliente"
+                        TextColor="Black"/>
             </Frame>
 
             <Button Text="Salvar"
-                    BackgroundColor="#6699cc"
+                    BackgroundColor="#a1a1a1"
                     Margin="0,20,0,0"
-                    TextColor="Black"
+                    TextColor="#FFFFFF"
                     Clicked="OnSalvarDadosClienteClicked"/>
 
-                <Button Text="Excluir"
-                        TextColor="Red"
-                        BackgroundColor="Transparent"
-                        Clicked="OnApagarClienteClicked"/>
-
+            <Button Text="Excluir"
+                    TextColor="Red"
+                    BackgroundColor="Transparent"
+                    Clicked="OnApagarClienteClicked"/>
 
             <Button Text="◀"
                     HorizontalOptions="Start"
                     VerticalOptions="EndAndExpand"
                     Margin="0,10,0,0"
-                    BackgroundColor="#6699cc"
+                    BackgroundColor="#a1a1a1"
+                    TextColor="#FFFFFF"
                     Clicked="OnVoltarCadastroClienteClicked"/>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
-
-<!--icon.png pode ser trocado por uma imagem-->

@@ -5,81 +5,89 @@
              Title="Cadastro de Fornecedores">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout BackgroundColor="#00008b"
+            <StackLayout BackgroundColor="#808080"
                     Padding="10">
                 <Frame CornerRadius="10"
-                        BackgroundColor="#6699cc"
+                        BackgroundColor="#919191"
                         Padding="10"
                         Margin="0,10"
                         VerticalOptions="FillAndExpand">
                     <StackLayout>
                         <Label Text="Cadastro de Fornecedores"
                                 FontAttributes="Bold"
-                                HorizontalOptions="Center"/>
+                                HorizontalOptions="Center"
+                                TextColor="#FFFFFF"/>
                     </StackLayout>
                 </Frame>
                 <Label Text="ID:"
-                        TextColor="#cfe7ff"/>
-                <Label x:Name="IdLabelFornecedor"></Label>
+                        TextColor="#FFFFFF"/>
+                <Label x:Name="IdLabelFornecedor"
+                       TextColor="#FFFFFF"/>
 
                 <Label Text="Nome:"
-                        TextColor="#cfe7ff"/>
+                        TextColor="#FFFFFF"/>
                 <Frame CornerRadius="5"
-                        BackgroundColor="#cfe7ff"
+                        BackgroundColor="#b2b2b2"
                         Padding="5">
                     <Entry Placeholder="Insira um nome..."
-                            x:Name="EntryNomeFornecedor"/>
+                            x:Name="EntryNomeFornecedor"
+                            TextColor="Black"/>
                 </Frame>
 
                 <Label Text="Telefone"
-                        TextColor="#cfe7ff"/>
+                        TextColor="#FFFFFF"/>
                 <Frame CornerRadius="5"
-                        BackgroundColor="#cfe7ff"
+                        BackgroundColor="#b2b2b2"
                         Padding="5">
                     <Entry Placeholder="Insira um telefone..."
-                            x:Name="EntryTelefoneFornecedor"/>
+                            x:Name="EntryTelefoneFornecedor"
+                            TextColor="Black"/>
                 </Frame>
 
                 <Label Text="E-Mail"
-                        TextColor="#cfe7ff"/>
+                        TextColor="#FFFFFF"/>
                 <Frame CornerRadius="5"
-                        BackgroundColor="#cfe7ff"
+                        BackgroundColor="#b2b2b2"
                         Padding="5">
                     <Entry Placeholder="Insira um e-mail..."
-                            x:Name="EntryEmailFornecedor"/>
+                            x:Name="EntryEmailFornecedor"
+                            TextColor="Black"/>
                 </Frame>
 
                 <Label Text="Endereço:"
-                        TextColor="#cfe7ff"/>
+                        TextColor="#FFFFFF"/>
                 <Frame CornerRadius="5"
-                        BackgroundColor="#cfe7ff"
+                        BackgroundColor="#b2b2b2"
                         Padding="5">
                     <Entry Placeholder="Insira o endereço do fornecedor..."
-                            x:Name="EntryEnderecoFornecedor"/>
+                            x:Name="EntryEnderecoFornecedor"
+                            TextColor="Black"/>
                 </Frame>
 
                 <Label Text="Matéria Prima:"
-                        TextColor="#cfe7ff"/>
+                        TextColor="#FFFFFF"/>
                 <Frame CornerRadius="5"
-                        BackgroundColor="#cfe7ff"
+                        BackgroundColor="#b2b2b2"
                         Padding="5">
                     <Entry Placeholder="Insira o que ele fornece..."
-                            x:Name="EntryMatPrimaFornecedor"/>
+                            x:Name="EntryMatPrimaFornecedor"
+                            TextColor="Black"/>
                 </Frame>
 
                 <Label Text="Área de Produção:"
-                        TextColor="#cfe7ff"/>
+                        TextColor="#FFFFFF"/>
                 <Frame CornerRadius="5"
-                        BackgroundColor="#cfe7ff"
+                        BackgroundColor="#b2b2b2"
                         Padding="5">
                     <Entry Placeholder="Insira a Área de Produção..."
-                            x:Name="EntryAreaProducaoFornecedor"/>
+                            x:Name="EntryAreaProducaoFornecedor"
+                            TextColor="Black"/>
                 </Frame>
 
                 <Button Text="Salvar"
-                        BackgroundColor="#6699cc"
+                        BackgroundColor="#a1a1a1"
                         Margin="0,20,0,0"
-                        TextColor="Black"
+                        TextColor="#FFFFFF"
                         Clicked="OnSalvarDadosFornecedorClicked"/>
 
                 <Button Text="Excluir"
@@ -91,7 +99,8 @@
                         HorizontalOptions="Start"
                         VerticalOptions="EndAndExpand"
                         Margin="0,10,0,0"
-                        BackgroundColor="#6699cc"
+                        BackgroundColor="#a1a1a1"
+                        TextColor="#FFFFFF"
                         Clicked="OnVoltarCadastroFornecedorClicked"/>
 
             </StackLayout>

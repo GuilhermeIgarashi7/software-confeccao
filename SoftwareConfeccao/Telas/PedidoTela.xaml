@@ -2,23 +2,26 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Telas.PedidoTela"
-             Title="Lista Pedido">
+             Title="Lista de Pedidos">
     <ContentPage.Content>
         <ScrollView>
-            <StackLayout BackgroundColor="#00008b"
-                    Padding="10">
+            <StackLayout BackgroundColor="#808080" Padding="10">
                 <Frame CornerRadius="10"
-                        BackgroundColor="#6699cc"
+                        BackgroundColor="#a1a1a1"
                         Padding="10"
                         Margin="0,10">
                     <StackLayout>
-                        <Label Text="Cadastro de Pedidos"
-                                FontAttributes="Bold"
-                                HorizontalOptions="Center"/>
-                        <Entry Placeholder="Coloque um dado..."/>
+                        <Label Text="Lista de Pedidos"
+                               FontAttributes="Bold"
+                               HorizontalOptions="Center"
+                               TextColor="#FFFFFF"/> <!-- Alterado para branco -->
+                        <Entry Placeholder="Coloque um dado..."
+                               TextColor="#000000"
+                               BackgroundColor="#c2c2c2"/>
                         <Button Text="➤"
                                 HorizontalOptions="End"
-                                BackgroundColor="#4169e1"/>
+                                BackgroundColor="#919191"
+                                TextColor="#000000"/>
                     </StackLayout>
                 </Frame>
 
@@ -26,21 +29,25 @@
                           ItemSelected="QuandoSelecionarUmItemNaListaPedido"
                           HasUnevenRows="True"
                           HorizontalOptions="Fill"
-                          VerticalOptions="Fill">
+                          VerticalOptions="Fill"
+                          BackgroundColor="#c2c2c2">
                     <ListView.ItemTemplate>
                         <DataTemplate>
                             <ViewCell>
                                 <VerticalStackLayout Padding="20"
-                                                     BackgroundColor="#4169e1">
+                                                     BackgroundColor="#919191">
                                     <HorizontalStackLayout>
                                         <Label Text="{Binding Nomeitem}"
-                                               FontSize="20"/>
+                                               FontSize="20"
+                                               TextColor="#FFFFFF"/> <!-- Alterado para branco -->
                                         <Label Text="{Binding Custoitem}"
                                                FontSize="20"
-                                               Margin="10,0,0,0"/>
+                                               Margin="10,0,0,0"
+                                               TextColor="#FFFFFF"/> <!-- Alterado para branco -->
                                     </HorizontalStackLayout>
                                     <Label Text="{Binding Quantidadepedido}"
-                                           FontSize="20"/>
+                                           FontSize="20"
+                                           TextColor="#FFFFFF"/> <!-- Alterado para branco -->
                                 </VerticalStackLayout>
                             </ViewCell>
                         </DataTemplate>
@@ -48,18 +55,20 @@
                 </ListView>
 
                 <StackLayout Orientation="Horizontal"
-                        HorizontalOptions="FillAndExpand"
-                        VerticalOptions="EndAndExpand"
-                        Padding="10">
+                             HorizontalOptions="FillAndExpand"
+                             VerticalOptions="EndAndExpand"
+                             Padding="10">
                     <Button Text="◀"
                             HorizontalOptions="StartAndExpand"
                             VerticalOptions="End"
-                            BackgroundColor="#4169e1"
+                            BackgroundColor="#919191"
+                            TextColor="#000000"
                             Clicked="OnVoltarPedidoClicked"/>
                     <Button Text="➕"
                             HorizontalOptions="EndAndExpand"
                             VerticalOptions="End"
-                            BackgroundColor="#4169e1"
+                            BackgroundColor="#919191"
+                            TextColor="#000000"
                             Clicked="OnNovoPedidoClicked"/>
                 </StackLayout>
 

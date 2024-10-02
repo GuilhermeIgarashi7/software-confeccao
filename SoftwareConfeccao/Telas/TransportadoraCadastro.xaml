@@ -2,70 +2,74 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Telas.TransportadoraCadastro"
-             Title="Cadastro de Cliente">
+             Title="Cadastro de Transportadora">
     <ContentPage.Content>
-        <StackLayout BackgroundColor="#00008b"
+        <StackLayout BackgroundColor="#808080"
                 Padding="10">
             <Frame CornerRadius="10"
-                    BackgroundColor="#6699cc"
+                    BackgroundColor="#919191"
                     Padding="10"
                     Margin="0,10"
                     VerticalOptions="FillAndExpand">
                 <StackLayout>
                     <Label Text="Cadastro de Transportadora"
                             FontAttributes="Bold"
-                            HorizontalOptions="Center"/>
+                            HorizontalOptions="Center"
+                            TextColor="#FFFFFF"/>
                 </StackLayout>
             </Frame>
             <Label Text="ID:"
-                    TextColor="#cfe7ff"/>
-            <Label x:Name="IdLabelTransportadora"></Label>
+                   TextColor="#FFFFFF"/>
+            <Label x:Name="IdLabelTransportadora" TextColor="#FFFFFF"></Label>
 
             <Label Text="Nome"
-                    TextColor="#cfe7ff"/>
+                   TextColor="#FFFFFF"/>
             <Frame CornerRadius="5"
-                    BackgroundColor="#cfe7ff"
+                    BackgroundColor="#b2b2b2"
                     Padding="5">
                 <Entry Placeholder="Insira um nome..."
-                        x:Name="EntryNomeTransportadora"/>
+                        x:Name="EntryNomeTransportadora"
+                        TextColor="Black"/>
             </Frame>
 
             <Label Text="Telefone"
-                    TextColor="#cfe7ff"/>
+                   TextColor="#FFFFFF"/>
             <Frame CornerRadius="5"
-                    BackgroundColor="#cfe7ff"
+                    BackgroundColor="#b2b2b2"
                     Padding="5">
                 <Entry Placeholder="Insira um telefone..."
-                        x:Name="EntryTelefoneTransportadora"/>
+                        x:Name="EntryTelefoneTransportadora"
+                        TextColor="Black"/>
             </Frame>
 
             <Label Text="E-Mail"
-                    TextColor="#cfe7ff"/>
+                   TextColor="#FFFFFF"/>
             <Frame CornerRadius="5"
-                    BackgroundColor="#cfe7ff"
+                    BackgroundColor="#b2b2b2"
                     Padding="5">
                 <Entry Placeholder="Insira um e-mail..."
-                        x:Name="EntryEmailTransportadora"/>
+                        x:Name="EntryEmailTransportadora"
+                        TextColor="Black"/>
             </Frame>
 
             <Button Text="Salvar"
-                    BackgroundColor="#6699cc"
+                    BackgroundColor="#a1a1a1"
                     Margin="0,20,0,0"
-                    TextColor="Black"
+                    TextColor="#FFFFFF"
                     Clicked="OnSalvarDadosTransportadoraClicked"/>
 
-                <Button Text="Excluir"
-                        TextColor="Red"
-                        BackgroundColor="Transparent"
-                        Clicked="OnApagarTransportadoraClicked"/>
+            <Button Text="Excluir"
+                    TextColor="Red"
+                    BackgroundColor="Transparent"
+                    Clicked="OnApagarTransportadoraClicked"/>
 
             <Button Text="◀"
                     HorizontalOptions="Start"
                     VerticalOptions="EndAndExpand"
                     Margin="0,10,0,0"
-                    BackgroundColor="#6699cc"
+                    BackgroundColor="#a1a1a1"
+                    TextColor="#FFFFFF"
                     Clicked="OnVoltarCadastroTransportadoraClicked"/>
-
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>
