@@ -7,14 +7,20 @@
 
         <Grid>
             <Grid.ColumnDefinitions>
-                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="400"/>
                 <ColumnDefinition Width="*"/>
             </Grid.ColumnDefinitions>
 
             <ScrollView Orientation="Vertical"
-                        BackgroundColor="#808080"
+                        BackgroundColor="Black"
                         Padding="10">
                 <StackLayout>
+
+                <Image Source="logo.png"
+                       HeightRequest="200"/>
+                <BoxView HeightRequest="1"
+                         BackgroundColor="#c2c2c2"
+                         Margin="0,10,0,10"/>
 
                     <Button Text="Clientes"
                             Clicked="OnClienteClicked"
