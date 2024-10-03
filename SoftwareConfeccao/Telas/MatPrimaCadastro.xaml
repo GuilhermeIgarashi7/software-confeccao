@@ -64,13 +64,13 @@
                         BackgroundColor="Transparent"
                         Clicked="OnApagarMatPrimaClicked"/>
 
-                <Button Text="◀"
-                        HorizontalOptions="Start"
-                        VerticalOptions="EndAndExpand"
-                        Margin="0,10,0,0"
-                        BackgroundColor="#919191"
-                        TextColor="#FFFFFF"
-                        Clicked="OnVoltarCadastroMatPrimaClicked"/>
+                    <ImageButton Source="volte.png"
+                            HorizontalOptions="StartAndExpand"
+                            VerticalOptions="End"
+                            BackgroundColor="Transparent"
+                            Clicked="OnVoltarCadastroMatPrimaClicked"
+                            HeightRequest="35"/>
+
             </StackLayout>
         </ScrollView>
     </ContentPage.Content>

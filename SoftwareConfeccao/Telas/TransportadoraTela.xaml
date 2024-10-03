@@ -19,10 +19,11 @@
                                TextColor="#FFFFFF"/>
                         <Entry Placeholder="Coloque um dado..."
                                TextColor="Black"/>
-                        <Button Text="➤"
+                        <Button Text="M"
                                 HorizontalOptions="End"
                                 BackgroundColor="#a1a1a1"
-                                TextColor="#FFFFFF"/>
+                                TextColor="Black"
+                            FontFamily="Flechas"/>
                     </StackLayout>
                 </Frame>
 
@@ -58,17 +59,19 @@
                              HorizontalOptions="FillAndExpand"
                              VerticalOptions="EndAndExpand"
                              Padding="10">
-                    <Button Text="◀"
+                    <ImageButton Source="volte.png"
                             HorizontalOptions="StartAndExpand"
                             VerticalOptions="End"
-                            BackgroundColor="#a1a1a1"
-                            TextColor="#FFFFFF"
-                            Clicked="OnVoltarTransportadoraClicked"/>
-                    <Button Text="➕"
+                            BackgroundColor="Transparent"
+                            Clicked="OnVoltarTransportadoraClicked"
+                            HeightRequest="35"/>
+                    <Button Text="+"
                             HorizontalOptions="EndAndExpand"
                             VerticalOptions="End"
                             BackgroundColor="#a1a1a1"
-                            TextColor="#FFFFFF"
+                            TextColor="Black"
+                            FontFamily="Flechas"
+                            FontSize="20"
                             Clicked="OnNovaTransportadoraClicked"/>
                 </StackLayout>
 

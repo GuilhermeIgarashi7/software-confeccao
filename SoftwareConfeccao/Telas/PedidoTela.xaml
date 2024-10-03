@@ -18,10 +18,11 @@
                         <Entry Placeholder="Coloque um dado..."
                                TextColor="#000000"
                                BackgroundColor="#c2c2c2"/>
-                        <Button Text="➤"
+                        <Button Text="M"
+                            FontFamily="Flechas"
                                 HorizontalOptions="End"
                                 BackgroundColor="#919191"
-                                TextColor="#000000"/>
+                                TextColor="Black"/>
                     </StackLayout>
                 </Frame>
 
@@ -58,17 +59,19 @@
                              HorizontalOptions="FillAndExpand"
                              VerticalOptions="EndAndExpand"
                              Padding="10">
-                    <Button Text="◀"
+                    <ImageButton Source="volte.png"
                             HorizontalOptions="StartAndExpand"
                             VerticalOptions="End"
-                            BackgroundColor="#919191"
-                            TextColor="#000000"
-                            Clicked="OnVoltarPedidoClicked"/>
-                    <Button Text="➕"
+                            BackgroundColor="Transparent"
+                            Clicked="OnVoltarPedidoClicked"
+                            HeightRequest="35"/>
+                    <Button Text="+"
                             HorizontalOptions="EndAndExpand"
                             VerticalOptions="End"
                             BackgroundColor="#919191"
-                            TextColor="#000000"
+                            TextColor="Black"
+                            FontFamily="Flechas"
+                            FontSize="20"
                             Clicked="OnNovoPedidoClicked"/>
                 </StackLayout>
 

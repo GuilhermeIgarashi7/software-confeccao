@@ -3,90 +3,84 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="SoftwareConfeccao.MainPage"
              Shell.NavBarIsVisible="False">
-        <ContentPage.Content>
-
+    <ContentPage.Content>
 
         <Grid>
-                <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="200"/>
-                        <ColumnDefinition Width="*"/>
-                </Grid.ColumnDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="200"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
 
-                <ScrollView Orientation="Vertical"
-                            BackgroundColor="#6699cc"
-                            Padding="10">
-                        <StackLayout>
+            <ScrollView Orientation="Vertical"
+                        BackgroundColor="#808080"
+                        Padding="10">
+                <StackLayout>
 
-                                <Button Text="Clientes"
-                                        Clicked="OnClienteClicked"
-                                        ImageSource="cliente.png"
-                                        HorizontalOptions="Start"
-                                        VerticalOptions="Center"
-                                        BackgroundColor="Transparent"
-                                        TextColor="Black"
-                                        FontAttributes="Bold"
-                                        HeightRequest="60"/>
+                    <Button Text="Clientes"
+                            Clicked="OnClienteClicked"
+                            ImageSource="cliente.png"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            BackgroundColor="Transparent"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            HeightRequest="60"/>
 
-                                <Button Text="Fornecedor"
-                                        ImageSource="entregador.png"
-                                        Clicked="OnFornecedorClicked"
-                                        HorizontalOptions="Start"
-                                        VerticalOptions="Center"
-                                        BackgroundColor="Transparent"
-                                        TextColor="Black"
-                                        FontAttributes="Bold"
-                                        HeightRequest="60"/>
+                    <Button Text="Fornecedor"
+                            ImageSource="entregador.png"
+                            Clicked="OnFornecedorClicked"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            BackgroundColor="Transparent"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            HeightRequest="60"/>
 
-                                <Button Text="Transportadora"
-                                        ImageSource="transportadora.png"
-                                        Clicked="OnTransportadoraClicked"
-                                        HorizontalOptions="Start"
-                                        VerticalOptions="Center"
-                                        BackgroundColor="Transparent"
-                                        TextColor="Black"
-                                        FontAttributes="Bold"
-                                        HeightRequest="60"/>
+                    <Button Text="Transportadora"
+                            ImageSource="transportadora.png"
+                            Clicked="OnTransportadoraClicked"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            BackgroundColor="Transparent"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            HeightRequest="60"/>
 
-                                <Button Text="Matéria Prima"
-                                        ImageSource="linha.png"
-                                        Clicked="OnMateriaPrimaClicked"
-                                        HorizontalOptions="Start"
-                                        VerticalOptions="Center"
-                                        BackgroundColor="Transparent"
-                                        TextColor="Black"
-                                        FontAttributes="Bold"
-                                        HeightRequest="60"/>
+                    <Button Text="Matéria Prima"
+                            ImageSource="linha.png"
+                            Clicked="OnMateriaPrimaClicked"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            BackgroundColor="Transparent"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            HeightRequest="60"/>
 
-                                <Button Text="Produtos"
-                                        ImageSource="camiseta.png"
-                                        Clicked="OnProdutoClicked"
-                                        HorizontalOptions="Start"
-                                        VerticalOptions="Center"
-                                        BackgroundColor="Transparent"
-                                        TextColor="Black"
-                                        FontAttributes="Bold"
-                                        HeightRequest="60"/>
+                    <Button Text="Produtos"
+                            ImageSource="camiseta.png"
+                            Clicked="OnProdutoClicked"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            BackgroundColor="Transparent"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            HeightRequest="60"/>
 
-                                <Button Text="Pedidos"
-                                        ImageSource="pedido.png"
-                                        Clicked="OnPedidosClicked"
-                                        HorizontalOptions="Start"
-                                        VerticalOptions="Center"
-                                        BackgroundColor="Transparent"
-                                        TextColor="Black"
-                                        FontAttributes="Bold"
-                                        HeightRequest="60"/>
+                    <Button Text="Pedidos"
+                            ImageSource="pedido.png"
+                            Clicked="OnPedidosClicked"
+                            HorizontalOptions="Start"
+                            VerticalOptions="Center"
+                            BackgroundColor="Transparent"
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            HeightRequest="60"/>
+                </StackLayout>
+            </ScrollView>
 
-                                
-
-
-                        </StackLayout>
-                </ScrollView>
-
-
-                <Image Grid.Column="1"
-                       Source="background.png"
-                       Aspect="AspectFill"/>
+            <Image Grid.Column="1"
+                   Source="background.jpg"
+                   Aspect="AspectFill"/>
         </Grid>
-        </ContentPage.Content>
+    </ContentPage.Content>
 </ContentPage>

@@ -95,13 +95,13 @@
                         BackgroundColor="Transparent"
                         Clicked="OnApagarFornecedorClicked"/>
 
-                <Button Text="◀"
-                        HorizontalOptions="Start"
-                        VerticalOptions="EndAndExpand"
-                        Margin="0,10,0,0"
-                        BackgroundColor="#a1a1a1"
-                        TextColor="#FFFFFF"
-                        Clicked="OnVoltarCadastroFornecedorClicked"/>
+                    <ImageButton Source="volte.png"
+                            HorizontalOptions="StartAndExpand"
+                            VerticalOptions="End"
+                            BackgroundColor="Transparent"
+                            Clicked="OnVoltarCadastroFornecedorClicked"
+                            HeightRequest="35"/>
+
 
             </StackLayout>
         </ScrollView>

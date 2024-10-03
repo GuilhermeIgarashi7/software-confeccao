@@ -88,13 +88,12 @@
                         BackgroundColor="Transparent"
                         Clicked="OnApagarPedidoClicked"/>
 
-                <Button Text="◀"
-                        HorizontalOptions="Start"
-                        VerticalOptions="EndAndExpand"
-                        Margin="0,10,0,0"
-                        BackgroundColor="#919191"
-                        TextColor="White"
-                        Clicked="OnVoltarCadastroPedidoClicked"/>
+                    <ImageButton Source="volte.png"
+                            HorizontalOptions="StartAndExpand"
+                            VerticalOptions="End"
+                            BackgroundColor="Transparent"
+                            Clicked="OnVoltarCadastroPedidoClicked"
+                            HeightRequest="35"/>
 
             </StackLayout>
         </ScrollView>
