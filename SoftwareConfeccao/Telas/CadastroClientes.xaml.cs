@@ -86,7 +86,7 @@ namespace Telas
             else if (await DisplayAlert("Excluir","Tem certeza que deseja excluir esse cliente?","Excluir Cliente","cancelar"))
             {
                 controleCliente.Apagar(cliente.Id);
-        Application.Current.MainPage = new ClientesTela();                 
+                Application.Current.MainPage = new ClientesTela();                 
             }
 
             
