@@ -28,6 +28,7 @@ namespace Telas
                 EntryNomeCliente.Text = cliente.Nome;
                 EntryEmailCliente.Text = cliente.Email;
                 EntryTelefoneCliente.Text = cliente.Telefone;
+                EntryCPFCliente.Text = cliente.CPF;
             }
         }
 
@@ -37,6 +38,7 @@ namespace Telas
             EntryNomeCliente.Text = string.Empty;
             EntryEmailCliente.Text = string.Empty;
             EntryTelefoneCliente.Text = string.Empty;
+            EntryCPFCliente.Text = string.Empty;
         }
 
         private async void OnSalvarDadosClienteClicked(object sender, EventArgs e)
@@ -51,6 +53,7 @@ namespace Telas
                 cliente.Nome = EntryNomeCliente.Text;
                 cliente.Email = EntryTelefoneCliente.Text;
                 cliente.Telefone = EntryEmailCliente.Text;
+                cliente.CPF = EntryCPFCliente.Text;
 
                 controleCliente.CriarOuAtualizar(cliente);
             }

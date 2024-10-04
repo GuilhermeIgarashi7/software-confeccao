@@ -43,6 +43,16 @@
                             TextColor="Black"/>
                 </Frame>
 
+                <Label Text="Unidade de Medida:"
+                        TextColor="#FFFFFF"/>
+                <Frame CornerRadius="5"
+                        BackgroundColor="#c2c2c2"
+                        Padding="5">
+                    <Entry Placeholder="Insira uma Unidade de Medida..."
+                            x:Name="EntryUnidMedida"
+                            TextColor="Black"/>
+                </Frame>
+
                 <Label Text="Quantidade"
                         TextColor="#FFFFFF"/>
                 <Frame CornerRadius="5"

@@ -11,6 +11,8 @@ namespace Modelos
         public string Nomeitem { get; set; }
 
         public string Custoitem { get; set; }
+        
+        public string Unidademed { get; set; }
 
         public string Quantidade { get; set; }
 

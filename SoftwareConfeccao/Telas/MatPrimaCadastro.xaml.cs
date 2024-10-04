@@ -27,7 +27,7 @@ namespace Telas
                 EntryNomeMatPrima.Text = matprima.Nomeitem;
                 EntryCustoMatPrima.Text = matprima.Custoitem;
                 EntryQuantidadeMatPrima.Text = matprima.Quantidade;
-
+                EntryUnidMedida.Text = matprima.Unidademed;
             }
         }
 
@@ -37,8 +37,7 @@ namespace Telas
             EntryNomeMatPrima.Text = string.Empty;
             EntryCustoMatPrima.Text = string.Empty;
             EntryQuantidadeMatPrima.Text = string.Empty;
-
-
+            EntryUnidMedida.Text = string.Empty;
         }
 
         private async void OnSalvarDadosMatPrimaClicked(object sender, EventArgs e)
@@ -53,6 +52,7 @@ namespace Telas
                 matprima.Nomeitem = EntryNomeMatPrima.Text;
                 matprima.Custoitem = EntryCustoMatPrima.Text;
                 matprima.Quantidade = EntryQuantidadeMatPrima.Text;
+                matprima.Unidademed = EntryUnidMedida.Text;
 
 
                 controleMatPrima.CriarOuAtualizar(matprima);
@@ -74,7 +74,12 @@ namespace Telas
             }
             else if (String.IsNullOrEmpty(EntryQuantidadeMatPrima.Text))
             {
-                await DisplayAlert("Cadastrar", "O campo Frete é obrigatório", "OK");
+                await DisplayAlert("Cadastrar", "O campo Quantidade é obrigatório", "OK");
+                return false;
+            }
+            else if (String.IsNullOrEmpty(EntryUnidMedida.Text))
+            {
+                await DisplayAlert("Cadastrar", "O campo Unidade de Medida é obrigatório", "OK");
                 return false;
             }
 

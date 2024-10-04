@@ -33,6 +33,17 @@
                         TextColor="Black"/>
             </Frame>
 
+            <Label Text="CPF:"
+                    TextColor="#FFFFFF"/>
+            <Frame CornerRadius="5"
+                    BackgroundColor="#b2b2b2"
+                    Padding="5">
+                <Entry Placeholder="Insira um CPF..."
+                        x:Name="EntryCPFCliente"
+                        MaxLength="15"
+                        TextColor="Black"/>
+            </Frame>
+
             <Label Text="Telefone"
                     TextColor="#FFFFFF"/>
             <Frame CornerRadius="5"

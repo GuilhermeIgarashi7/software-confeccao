@@ -34,6 +34,16 @@
                             TextColor="Black"/>
                 </Frame>
 
+                <Label Text="CNPJ/CPF:"
+                        TextColor="#FFFFFF"/>
+                <Frame CornerRadius="5"
+                        BackgroundColor="#b2b2b2"
+                        Padding="5">
+                    <Entry Placeholder="Insira um telefone..."
+                            x:Name="EntryCNPJFornecedor"
+                            TextColor="Black"/>
+                </Frame>
+
                 <Label Text="Telefone"
                         TextColor="#FFFFFF"/>
                 <Frame CornerRadius="5"

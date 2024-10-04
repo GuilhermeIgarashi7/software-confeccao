@@ -27,9 +27,11 @@ namespace Telas
                 EntryNomeFornecedor.Text = fornecedor.Nome;
                 EntryEmailFornecedor.Text = fornecedor.Email;
                 EntryTelefoneFornecedor.Text = fornecedor.Telefone;
+                EntryCNPJFornecedor.Text = fornecedor.CPF;
                 EntryEnderecoFornecedor.Text = fornecedor.Enderecofornecedor;
                 EntryMatPrimaFornecedor.Text = fornecedor.Matprimafornecedor;
                 EntryAreaProducaoFornecedor.Text = fornecedor.Areaproducaofornecedor;
+
             }
         }
 
@@ -42,6 +44,7 @@ namespace Telas
             EntryEnderecoFornecedor.Text = string.Empty;
             EntryMatPrimaFornecedor.Text = string.Empty;
             EntryAreaProducaoFornecedor.Text = string.Empty;
+            EntryCNPJFornecedor.Text= string.Empty;
 
 
         }
@@ -57,6 +60,7 @@ namespace Telas
                     fornecedor.Id = 0;
                 fornecedor.Nome = EntryNomeFornecedor.Text;
                 fornecedor.Email = EntryTelefoneFornecedor.Text;
+                fornecedor.CPF = EntryCNPJFornecedor.Text;
                 fornecedor.Telefone = EntryEmailFornecedor.Text;
                 fornecedor.Matprimafornecedor = EntryMatPrimaFornecedor.Text;
                 fornecedor.Areaproducaofornecedor = EntryAreaProducaoFornecedor.Text;
