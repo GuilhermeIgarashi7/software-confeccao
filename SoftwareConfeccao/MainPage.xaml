@@ -12,7 +12,7 @@
             </Grid.ColumnDefinitions>
 
             <ScrollView Orientation="Vertical"
-                        BackgroundColor="White"
+                        BackgroundColor="Black"
                         Padding="10">
                 <StackLayout>
 
@@ -23,65 +23,47 @@
                          BackgroundColor="#c2c2c2"
                          Margin="0,10,0,10"/>
 
-                    <Button Text="Clientes"
+                    <ImageButton 
                             Clicked="OnClienteClicked"
-                            ImageSource="cliente.png"
+                            Source="cliente.png"
                             HorizontalOptions="Start"
-                            VerticalOptions="Center"
-                            BackgroundColor="Transparent"
-                            TextColor="Black"
-                            FontAttributes="Bold"
-                            HeightRequest="60"/>
+                            VerticalOptions="Start"
+                            BackgroundColor="Transparent"/>
 
-                    <Button Text="Fornecedor"
-                            ImageSource="entregador.png"
+                    <ImageButton 
+                            Source="entregador.png"
                             Clicked="OnFornecedorClicked"
                             HorizontalOptions="Start"
-                            VerticalOptions="Center"
-                            BackgroundColor="Transparent"
-                            TextColor="Black"
-                            FontAttributes="Bold"
-                            HeightRequest="60"/>
+                            VerticalOptions="Start"
+                            BackgroundColor="Transparent"/>
 
-                    <Button Text="Transportadora"
-                            ImageSource="transportadora.png"
+                    <ImageButton 
+                            Source="transportadora.png"
                             Clicked="OnTransportadoraClicked"
                             HorizontalOptions="Start"
-                            VerticalOptions="Center"
-                            BackgroundColor="Transparent"
-                            TextColor="Black"
-                            FontAttributes="Bold"
-                            HeightRequest="60"/>
+                            VerticalOptions="Start"
+                            BackgroundColor="Transparent"/>
 
-                    <Button Text="Matéria Prima"
-                            ImageSource="linha.png"
+                    <ImageButton 
+                            Source="linha.png"
                             Clicked="OnMateriaPrimaClicked"
                             HorizontalOptions="Start"
-                            VerticalOptions="Center"
-                            BackgroundColor="Transparent"
-                            TextColor="Black"
-                            FontAttributes="Bold"
-                            HeightRequest="60"/>
+                            VerticalOptions="Start"
+                            BackgroundColor="Transparent"/>
 
-                    <Button Text="Produtos"
-                            ImageSource="camiseta.png"
+                    <ImageButton 
+                            Source="camiseta.png"
                             Clicked="OnProdutoClicked"
                             HorizontalOptions="Start"
-                            VerticalOptions="Center"
-                            BackgroundColor="Transparent"
-                            TextColor="Black"
-                            FontAttributes="Bold"
-                            HeightRequest="60"/>
+                            VerticalOptions="Start"
+                            BackgroundColor="Transparent"/>
 
-                    <Button Text="Pedidos"
-                            ImageSource="pedido.png"
+                    <ImageButton
+                            Source="pedido.png"
                             Clicked="OnPedidosClicked"
                             HorizontalOptions="Start"
-                            VerticalOptions="Center"
-                            BackgroundColor="Transparent"
-                            TextColor="Black"
-                            FontAttributes="Bold"
-                            HeightRequest="60"/>
+                            VerticalOptions="Start"
+                            BackgroundColor="Transparent"/>
                 </StackLayout>
             </ScrollView>
 
